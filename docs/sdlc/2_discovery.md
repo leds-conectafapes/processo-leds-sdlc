@@ -14,7 +14,7 @@ O **Product Owner (PO)** é o principal responsável por conduzir esta fase, gar
 > [!TIP]
 > Os benefícios identificados podem (e devem) ser usados como indicadores de sucesso (KPIs) do projeto.
 
----
+
 
 ### 1. Público-Alvo
 
@@ -32,14 +32,15 @@ Identificar quem sentirá o impacto da solução e quais suas características.
 
 ---
 
-### 2. Principais Ferramentas e Atividades
+### 2. Atividades e Ferramentas de Descoberta
 
-Técnicas utilizadas para extrair informações e validar hipóteses.
+Como extrair as informações necessárias e validar as hipóteses iniciais?
 
-*   **Benchmarking / Estado da Arte**: Pesquisar soluções comerciais ou acadêmicas que já resolvem problemas similares.
-*   **Entrevistas e Questionários**: Coleta de dados qualitativos e quantitativos diretamente com os envolvidos.
-*   **Personas e Mapa de Empatia**: Criação de perfis semificcionais para representar os diferentes tipos de usuários.
-*   **Matriz CSD**: Levantamento de Certezas, Suposições e Dúvidas para guiar a pesquisa.
+**Questões para guiar a escolha de atividades:**
+1. **Já existem soluções (comerciais ou acadêmicas) que resolvem este problema ou parte dele?** (Benchmarking / Estado da Arte).
+2. **Quais dados qualitativos e quantitativos precisamos coletar diretamente com os envolvidos?** (Entrevistas e Questionários).
+3. **Quem são as pessoas reais por trás dos dados e quais seus comportamentos?** (Personas e Mapa de Empatia).
+4. **O que temos de Certezas, Suposições e Dúvidas para priorizar o que deve ser pesquisado?** (Matriz CSD).
 
 **Exemplo Prático:**
 *   **Atividade**: Realização de uma Matriz CSD para identificar que "supomos" que os alunos preferem notificações via WhatsApp em vez de E-mail.
