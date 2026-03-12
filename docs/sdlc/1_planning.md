@@ -67,7 +67,7 @@ Para que os objetivos do projeto sejam claros e alcançáveis, utilizamos a meto
 
 ---
 
-## Exemplo de SOW
+## Artefato Gerado: Versão Inicial do SOW
 
 Abaixo, um exemplo prático de preenchimento do SOW para um projeto hipotético de **Sistema de Gestão de Inventário para o LEDS**:
 
