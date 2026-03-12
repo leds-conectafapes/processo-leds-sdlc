@@ -8,9 +8,13 @@ Esta documentação detalha o Ciclo de Vida de Desenvolvimento de Software (SDLC
 - Garantir a qualidade das soluções entregues.
 - Facilitar a integração de novos membros.
 
-## Como ler esse documento ?
+## Como ler este documento?
 
-Leia primeiro o link da equipe para entender os papéis envolvidos depois lei o processo
+Para uma melhor compreensão do funcionamento do laboratório, recomendamos a seguinte ordem de leitura:
+
+1. [**Estrutura da Equipe**](team/equipe.md): Entenda os papéis, responsabilidades e como os times são organizados.
+2. [**Processo SDLC**](sdlc/0_processo.md): Conheça as fases do ciclo de vida de desenvolvimento e os artefatos gerados.
+3. [**Modelos**](modelos/sow_template.md): Utilize os templates padronizados para iniciar seu projeto.
 
 
 ---
