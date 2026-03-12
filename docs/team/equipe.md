@@ -4,7 +4,7 @@ As equipes são organizadas seguindo os seguintes modelos: **Board** (Equipe de 
 
 ## Board 
 
-O Board é um conjunto de especialistas de diferentes áreas que se reúnem para discutir e resolver problemas específicos. Devido a natureza do projeto, esse auxilia as equipes no entendimento do problema, planejamento do projeto, na definição de soluções e na melhoria contínua.
+O Board é um conjunto de especialistas de diferentes áreas que se reúnem para discutir e resolver problemas específicos. Devido a natureza do projeto, esse auxilia as equipes no entendimento do problema, planejamento do projeto, na definição de soluções e na melhoria contínua. Cada memebro do Board tem a funcionalidade de tutoriar e guiar as equipes.
 
 ## Stream-aligned Teams (Equipes Alinhadas ao Fluxo)
 
@@ -17,6 +17,8 @@ A equipe é formada por:
 * **Cliente**: Representante do órgão público ou organização parceira que demanda a solução de software.
 
 * **Product Manager**: Responsável por definir a visão do produto e priorizar o backlog.
+
+* **UX Designer**: Responsável por definir a experiência do usuário do produto.
 
 * **Tech Leader**: Responsável por definir a arquitetura do software e guiar os desenvolvedores na entrega com qualidade. Por exemplo, orientando a equipe na decomposição da features do backlog em tarefas técnicas.
 

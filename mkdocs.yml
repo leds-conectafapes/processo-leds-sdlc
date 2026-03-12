@@ -34,7 +34,11 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -55,3 +59,17 @@ nav:
     - 2. Discovery: sdlc/2_discovery.md
   - Modelos:
     - SOW (Statement of Work): modelos/sow_template.md
+    - Base de Conhecimento:
+      - Visão Geral: modelos/knowledge/overview.md
+      - Mapa de Domínios: modelos/knowledge/domain-map.md
+      - Dicionário: modelos/knowledge/dictionary.md
+      - Matriz de Domínios (DSM): modelos/knowledge/dsm.md
+      - Domínios:
+        - Compliance: modelos/knowledge/domains/compliance.md
+        - Integrações Externas: modelos/knowledge/domains/external-integrations.md
+        - Gestão Financeira: modelos/knowledge/domains/financial-management.md
+        - Instituição de Execução: modelos/knowledge/domains/grantee-institution.md
+        - Beneficiário: modelos/knowledge/domains/grantee.md
+        - Concessor: modelos/knowledge/domains/grantor.md
+        - Pagamentos: modelos/knowledge/domains/payments.md
+        - Convenente: modelos/knowledge/domains/subrecipient.md

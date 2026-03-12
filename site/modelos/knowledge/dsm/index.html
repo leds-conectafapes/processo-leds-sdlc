@@ -1,0 +1,1961 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do Processo de Desenvolvimento de Software do LEDS">
+      
+      
+        <meta name="author" content="LEDS">
+      
+      
+      
+        <link rel="prev" href="../dictionary/">
+      
+      
+        <link rel="next" href="../domains/compliance/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Matriz de Domínios (DSM) - LEDS SDLC Process</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-structure-matrix-dsm-dominios" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="LEDS SDLC Process" class="md-header__button md-logo" aria-label="LEDS SDLC Process" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LEDS SDLC Process
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Matriz de Domínios (DSM)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../team/equipe/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Estrutura da Equipe
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sdlc/0_processo/" class="md-tabs__link">
+          
+  
+  
+  Processo SDLC
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../sow_template/" class="md-tabs__link">
+          
+  
+  
+  Modelos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LEDS SDLC Process" class="md-nav__button md-logo" aria-label="LEDS SDLC Process" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LEDS SDLC Process
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../team/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estrutura da Equipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processo SDLC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Processo SDLC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdlc/0_processo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdlc/1_planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Planejamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdlc/2_discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Discovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sow_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOW (Statement of Work)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de Conhecimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de Conhecimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Domínios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dictionary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dicionário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Domínios (DSM)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Domínios (DSM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-matriz-de-estrutura-de-design-dsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Matriz de Estrutura de Design (DSM)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Matriz de Estrutura de Design (DSM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legenda:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-logica-de-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Lógica de Dependências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ordenacao-topologica-ordem-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ordenação Topológica (Ordem de Execução)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ordenação Topológica (Ordem de Execução)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processo-de-ordenacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processo de Ordenação:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordem-final-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ordem Final de Execução:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-resumo-de-funcionalidades-por-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Resumo de Funcionalidades por Domínio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-matrizes-funcionais-dsm-por-fases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Matrizes Funcionais (DSM por Fases)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Matrizes Funcionais (DSM por Fases)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-fase-1-setup-e-planejamento-grantor-financial-basis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Fase 1: Setup e Planejamento (Grantor &amp; Financial Basis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-fase-2-captacao-e-formalizacao-pre-award-institution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Fase 2: Captação e Formalização (Pre-Award &amp; Institution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-fase-3-operacao-e-execucao-grantee-subrecipient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Fase 3: Operação e Execução (Grantee &amp; Subrecipient)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-fase-4-fluxo-financeiro-e-fechamento-payments-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Fase 4: Fluxo Financeiro e Fechamento (Payments &amp; Compliance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_5" id="__nav_4_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domínios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Domínios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/external-integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrações Externas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/financial-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão Financeira
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/grantee-institution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instituição de Execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/grantee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beneficiário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/grantor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concessor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/payments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/subrecipient/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-matriz-de-estrutura-de-design-dsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Matriz de Estrutura de Design (DSM)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Matriz de Estrutura de Design (DSM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legenda:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-logica-de-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Lógica de Dependências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ordenacao-topologica-ordem-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ordenação Topológica (Ordem de Execução)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ordenação Topológica (Ordem de Execução)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processo-de-ordenacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processo de Ordenação:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordem-final-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ordem Final de Execução:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-resumo-de-funcionalidades-por-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Resumo de Funcionalidades por Domínio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-matrizes-funcionais-dsm-por-fases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Matrizes Funcionais (DSM por Fases)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Matrizes Funcionais (DSM por Fases)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-fase-1-setup-e-planejamento-grantor-financial-basis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Fase 1: Setup e Planejamento (Grantor &amp; Financial Basis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-fase-2-captacao-e-formalizacao-pre-award-institution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Fase 2: Captação e Formalização (Pre-Award &amp; Institution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-fase-3-operacao-e-execucao-grantee-subrecipient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Fase 3: Operação e Execução (Grantee &amp; Subrecipient)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-fase-4-fluxo-financeiro-e-fechamento-payments-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Fase 4: Fluxo Financeiro e Fechamento (Payments &amp; Compliance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="design-structure-matrix-dsm-dominios">Design Structure Matrix (DSM) - Domínios</h1>
+<p>Esta página documenta as dependências entre os domínios do sistema ConectaFAPES e a ordem de execução sugerida através de uma ordenação topológica.</p>
+<h2 id="1-matriz-de-estrutura-de-design-dsm">1. Matriz de Estrutura de Design (DSM)</h2>
+<p>Na matriz abaixo, um <strong>X</strong> na intersecção da linha (Domínio Dependente) com a coluna (Fonte de Dependência) indica que o domínio da linha depende de informações ou processos do domínio da coluna.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Domínios</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Grantor</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Financial Management</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Grantee Institution</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Grantee</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Subrecipient</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>6. Payments</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>7. Compliance</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="legenda">Legenda:</h3>
+<ul>
+<li><strong>X</strong>: Dependência direta.</li>
+<li><strong>Linhas</strong>: O que o domínio precisa para funcionar.</li>
+<li><strong>Colunas</strong>: O que o domínio provê para os outros.</li>
+</ul>
+<hr />
+<h2 id="2-logica-de-dependencias">2. Lógica de Dependências</h2>
+<ol>
+<li><strong>Grantor</strong>: Base de tudo (Editais/FOA). Não possui dependências de outros domínios para sua definição estratégica inicial.</li>
+<li><strong>Financial Management</strong>: Depende do <strong>Grantor</strong> para conhecer os programas, patrocinadores e limites orçamentários definidos nos editais.</li>
+<li><strong>Grantee Institution</strong>: Depende do <strong>Grantor</strong> para a formalização do Award e aceite institucional.</li>
+<li><strong>Grantee</strong>: Depende da <strong>Grantee Institution</strong> (entidade sede) e do <strong>Grantor</strong> (autoridade financiadora) para iniciar a gestão do projeto.</li>
+<li><strong>Subrecipient</strong>: Depende do <strong>Grantee</strong> (Coordenador) para ser alocado na equipe e ter seu plano de trabalho definido.</li>
+<li><strong>Payments</strong>: Depende do <strong>Financial Management</strong> (rubricas/contas), do <strong>Grantee</strong> (validação de marcos) and do <strong>Subrecipient</strong> (folha de pagamento de bolsas).</li>
+<li><strong>Compliance</strong>: Domínio transversal que depende dos dados de execução de <strong>todos</strong> os outros para realizar auditoria e monitoramento (Gatekeeper).</li>
+</ol>
+<hr />
+<h2 id="3-ordenacao-topologica-ordem-de-execucao">3. Ordenação Topológica (Ordem de Execução)</h2>
+<p>Aplicando o algoritmo de ordenação topológica baseado nos in-degrees (número de dependências de entrada):</p>
+<h3 id="processo-de-ordenacao">Processo de Ordenação:</h3>
+<ol>
+<li><strong>Grau 0</strong>: Grantor (Entrada imediata).</li>
+<li><strong>Grau 1</strong>: Financial Management, Grantee Institution (Dependem apenas do Grantor).</li>
+<li><strong>Grau 2</strong>: Grantee (Depende de Grantor e Institution).</li>
+<li><strong>Grau 3</strong>: Subrecipient (Depende de Grantee).</li>
+<li><strong>Grau 4</strong>: Payments (Depende de Financial, Grantee e Subrecipient).</li>
+<li><strong>Grau 5</strong>: Compliance (Consome dados de todos os anteriores para auditoria final).</li>
+</ol>
+<h3 id="ordem-final-de-execucao">Ordem Final de Execução:</h3>
+<pre class="mermaid"><code>graph LR
+    A[1. Grantor] --&gt; B[2. Financial Mgt]
+    A --&gt; C[3. Grantee Institution]
+    C --&gt; D[4. Grantee]
+    A --&gt; D
+    D --&gt; E[5. Subrecipient]
+    B --&gt; F[6. Payments]
+    D --&gt; F
+    E --&gt; F
+    F --&gt; G[7. Compliance]
+    A -.-&gt; G
+    B -.-&gt; G
+    C -.-&gt; G
+    D -.-&gt; G
+    E -.-&gt; G</code></pre>
+<ol>
+<li><strong>Grantor</strong> (Planejamento)</li>
+<li><strong>Financial Management</strong> &amp; <strong>Grantee Institution</strong> (Estruturação)</li>
+<li><strong>Grantee</strong> (Coordenação)</li>
+<li><strong>Subrecipient</strong> (Execução Técnica)</li>
+<li><strong>Payments</strong> (Fluxo Financeiro)</li>
+<li><strong>Compliance</strong> (Encerramento/Auditoria)</li>
+</ol>
+<hr />
+<h2 id="4-resumo-de-funcionalidades-por-dominio">4. Resumo de Funcionalidades por Domínio</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Domínio</th>
+<th style="text-align: left;">Principais Funcionalidades / Módulos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Grantor</strong></td>
+<td style="text-align: left;">IAM (Login PRODEST), Gestão de Pessoas, Parâmetros Técnicos (CNPq), Modalidades de Bolsa, Planejamento Estratégico, Programas, Captação (Editais/Review Panels).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Financial Mgt</strong></td>
+<td style="text-align: left;">Gestão Contábil (Rubricas), Execução Financeira (Saldo Orçado x Pago), Gestão de UGs/Fontes, Planejamento Orçamentário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Institution</strong></td>
+<td style="text-align: left;">Cadastro Institucional (IES/Empresas), Governança (Responsáveis Legais), Dashboards de Portfólio, Asset Management (Patrimônio).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Grantee</strong></td>
+<td style="text-align: left;">Submissão de Propostas (Pre-Award), Assinatura de Outorga (Post-Award), Gestão de Resultados/Metas, Remanejamento de Recursos, Gestão de Equipe, Lifecycle.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Subrecipient</strong></td>
+<td style="text-align: left;">My Grant (Aceite/Bolsa), Automated Onboarding (Conta Bancária), Envio de Frequências e Relatórios Técnicos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Payments</strong></td>
+<td style="text-align: left;">Processamento de Marcos (Milestones), Automação de Folha de Bolsas, Intercâmbio Bancário (@-EDI), Conciliação e Compliance Bancário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Compliance</strong></td>
+<td style="text-align: left;">BI e Inteligência, Dashboards de Transparência, Audit View (Prestação de Contas), Automated Validation (Plágio/Overlap de bolsas).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-matrizes-funcionais-dsm-por-fases">5. Matrizes Funcionais (DSM por Fases)</h2>
+<p>Para permitir um desenvolvimento incremental e seguro, as funcionalidades foram agrupadas em matrizes de dependência por fase de entrega.</p>
+<blockquote>
+<p>[!NOTE]
+<strong>Como ler a Ordem de Execução:</strong>
+- <code>[A, B]</code>: Indica que as tarefas A e B são independentes entre si e podem ocorrer em <strong>paralelo</strong>.
+- <code>A → B</code>: Indica uma <strong>dependência obrigatória</strong>. B só pode iniciar após a conclusão de A.</p>
+</blockquote>
+<h3 id="51-fase-1-setup-e-planejamento-grantor-financial-basis">5.1 Fase 1: Setup e Planejamento (Grantor &amp; Financial Basis)</h3>
+<p>Nesta fase, as dependências são lineares e focadas em parametrização básica do ecossistema.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidades</th>
+<th style="text-align: center;">G1</th>
+<th style="text-align: center;">G2</th>
+<th style="text-align: center;">G3</th>
+<th style="text-align: center;">F1</th>
+<th style="text-align: center;">F2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>G1. IAM / Acesso Cidadão</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>G2. Parâmetros (Áreas/Cidades)</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>G3. Modalidades &amp; Valores</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>F1. Plano de Contas / Rubricas</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>F2. Fontes de Recurso / UGs</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legenda:</strong></p>
+<ul>
+<li><strong>G1</strong>: IAM / Acesso Segurança (Login PRODEST).</li>
+<li><strong>G2</strong>: Parâmetros Gerais (Geolocalização e Áreas de Conhecimento).</li>
+<li><strong>G3</strong>: Gestão de Modalidade (Regras de elegibilidade e níveis de bolsa).</li>
+<li><strong>F1</strong>: Gestão Contábil (Plano de rubricas vinculadas a editais).</li>
+<li><strong>F2</strong>: Unidades e Fontes (Cadastro de UGs e subcontas de fomento).</li>
+</ul>
+<p><strong>Ordem</strong>: G1 → G2 → G3 → F1 → F2.</p>
+<h3 id="52-fase-2-captacao-e-formalizacao-pre-award-institution">5.2 Fase 2: Captação e Formalização (Pre-Award &amp; Institution)</h3>
+<p>A instituição depende da definição do Grantor para hospedar o portfólio e formalizar parcerias.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidades</th>
+<th style="text-align: center;">G.Pre</th>
+<th style="text-align: center;">I.Reg</th>
+<th style="text-align: center;">I.Gov</th>
+<th style="text-align: center;">G.Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>G.Pre: Editais &amp; Templates</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>I.Reg: Cadastro Institucional</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>I.Gov: Responsáveis Legais</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>G.Post: Assinatura Award</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legenda:</strong></p>
+<ul>
+<li><strong>G.Pre</strong>: Grantor Pre-Award (Criação de Editais e Templates de submissão).</li>
+<li><strong>I.Reg</strong>: Institution Registry (Cadastro de IES/Empresas intervenientes).</li>
+<li><strong>I.Gov</strong>: Institution Governance (Definição de Reitores e Chefias com poder de assinatura).</li>
+<li><strong>G.Post</strong>: Grantee Post-Award (Assinatura do Termo de Outorga / Award Agreement).</li>
+</ul>
+<p><strong>Ordem</strong>: [G.Pre, I.Reg] → I.Gov → G.Post.</p>
+<h3 id="53-fase-3-operacao-e-execucao-grantee-subrecipient">5.3 Fase 3: Operação e Execução (Grantee &amp; Subrecipient)</h3>
+<p>O coração da execução técnica, onde as metas do projeto ditam a alocação de equipe.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidades</th>
+<th style="text-align: center;">G.Res</th>
+<th style="text-align: center;">G.Equ</th>
+<th style="text-align: center;">S.MyG</th>
+<th style="text-align: center;">S.Obl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>G.Res: Metas &amp; Prazos</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>G.Equ: Alocação de Bolsistas</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>S.MyG: Implementação Bolsa</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>S.Obl: Relatórios Individuais</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legenda:</strong></p>
+<ul>
+<li><strong>G.Res</strong>: Gestão de Resultados (Definição de metas, produtos e cronograma técnico).</li>
+<li><strong>G.Equ</strong>: Gestão de Equipe (Solicitação e remanejo de bolsas no projeto).</li>
+<li><strong>S.MyG</strong>: My Grant (Implementação da bolsa pelo bolsista: aceite de termos e conta bancária).</li>
+<li><strong>S.Obl</strong>: Obrigações e Reporte (Envio de frequências e relatórios mensais de atividade).</li>
+</ul>
+<p><strong>Ordem</strong>: G.Res → G.Equ → S.MyG → S.Obl.</p>
+<h3 id="54-fase-4-fluxo-financeiro-e-fechamento-payments-compliance">5.4 Fase 4: Fluxo Financeiro e Fechamento (Payments &amp; Compliance)</h3>
+<p>A fase final que consome todos os dados transacionais para auditoria e prestação de contas.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidades</th>
+<th style="text-align: center;">P.Mar</th>
+<th style="text-align: center;">P.EDI</th>
+<th style="text-align: center;">P.Rec</th>
+<th style="text-align: center;">C.Aud</th>
+<th style="text-align: center;">C.Val</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>P.Mar: Liberação Parcelas</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>P.EDI: Remessa Bancária</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>P.Rec: Conciliação/Extrato</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>C.Aud: Análise Contas</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>C.Val: Rule Engine / Overlap</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legenda:</strong></p>
+<ul>
+<li>
+<p><strong>P.Mar</strong>: Gestão de Pagamentos (Processamento de marcos/milestones para liberação).</p>
+</li>
+<li>
+<p><strong>P.EDI</strong>: Intercâmbio Bancário (Emissão de arquivos de remessa @-EDI).</p>
+</li>
+<li>
+<p><strong>P.Rec</strong>: Bank Reconciliation (Leitura de retorno bancário e extratos em tempo real).</p>
+</li>
+<li>
+<p><strong>C.Aud</strong>: Compliance Audit (Análise visual e cruzamento de metas vs resultados pagos).</p>
+</li>
+<li>
+<p><strong>C.Val</strong>: Automated Validation (Rule engine para detecção de plágio e acúmulo de bolsas).</p>
+</li>
+</ul>
+<p><strong>Ordem</strong>: P.Mar → P.EDI → P.Rec → C.Aud → C.Val.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

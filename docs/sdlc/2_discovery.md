@@ -6,7 +6,7 @@ Além do complemtno do SOW, essa etapa pode gerar uma base de conhecimento que s
 
 O **Product Owner (PO)** é o principal responsável por conduzir esta fase, garantindo o alinhamento entre as expectativas do cliente e o entendimento real do problema.
 
-### Questões Fundamentais do Discovery:
+### Questões Fundamentais do Discovery
 
 * **Qual o domínio do problema e em qual categoria ele se encaixa?** Entender o domínio permite dominar conceitos, jargões e informações relevantes.
     * *Exemplo*: Se o projeto é sobre gestão de inventário, o domínio é "Logística/Patrimônio" e a categoria é "Gestão de Ativos".
@@ -33,3 +33,36 @@ O **Product Owner (PO)** é o principal responsável por conduzir esta fase, gar
 * **Já existem soluções (comerciais ou acadêmicas) que resolvem este problema ou parte dele?** (Benchmarking / Estado da Arte).
 * **Quais dados qualitativos e quantitativos precisamos coletar diretamente com os envolvidos?** (Entrevistas e Questionários).
 * **Quem são as pessoas reais por trás dos dados e quais seus comportamentos?** (Personas e Mapa de Empatia).
+
+## Artefato Gerado
+
+* Base de Conhecimento: Documentação que será utilizada nas próximas etapas do processo e pode ser usado para treinar a equipe de desenvolvimento nos conceitos, dominios e jargões do projeto. Segue os templates de documentos de Base de Conhecimento:
+
+    *   **[Visão Geral da Base de Conhecimento](../modelos/knowledge/overview.md)**: Documento central que contextualiza o domínio de negócio do projeto, estabelecendo os fundamentos para o entendimento da equipe.
+
+    *   **[Mapa de Domínios](../modelos/knowledge/domain-map.md)**: Visualização estratégica que delimita as fronteiras e interações entre os diferentes subdomínios mapeados.
+    
+    *   **Domínios de Referência**: Catálogo de detalhamento técnico e de negócio para áreas específicas (ex: [Pagamentos](../modelos/knowledge/domains/payments.md), [Compliance](../modelos/knowledge/domains/compliance.md), [Gestão Financeira](../modelos/knowledge/domains/financial-management.md)), que servem como guia para o desenvolvimento e treinamento.
+    
+    *   **[Dicionário de Termos](../modelos/knowledge/dictionary.md)**: Glossário padronizado com jargões e conceitos fundamentais, garantindo uma linguagem onipresente entre stakeholders e a equipe técnica.
+    
+    *   **[Design Structure Matrix (DSM)](../modelos/knowledge/dsm.md)**: Matriz de modelagem de dependências que analisa as relações estruturais e a complexidade entre os domínios identificados.
+
+### Dependency and Structure Modeling (DSM)
+
+O **Dependency and Structure Modeling (DSM)** é uma ferramenta poderosa para modelar e analisar dependências dentro de um domínio. Originado por Don Steward em 1981, o DSM permite mapear como os componentes de um sistema se relacionam entre si.
+
+Principais características:
+*   **Análise de Dependência**: Útil para entender como a mudança em um componente impacta outros (propagação de mudanças).
+*   **Tipos de DSM**: Podem ser **binários** (indicam apenas a existência de relação) ou **numéricos** (atribuem um peso à força da relação).
+*   **Direcionamento**: Podem ser direcionados ou não direcionados.
+*   **Não Reflexivo**: Uma relação de um elemento com ele mesmo não é permitida.
+
+No contexto do SDLC, utilizamos o DSM para mapear a relação entre os domínios identificados, ajudando a visualizar a complexidade e as interdependências do projeto.
+
+
+* SOW Revisado: Documento que contém o entendimento do problema, a revisão do SOW e as soluções existentes.
+    Utilize o **[Template: SOW (Statement of Work)](../modelos/sow_template.md)** para documentar os resultados desta fase.
+
+Referência: [Design Structure Matrix (DSM)](https://dsmweb.org/)
+
