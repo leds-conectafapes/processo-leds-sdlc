@@ -2,7 +2,7 @@
 
 Responsável por apresentar uma visão de alto nível dos objetivos e entregas do projeto tanto para a equipe quanto para o cliente. O Resultado dessa fase é o SOW (Statement of Work), contendo os objetivos do projeto, restrições e expectativas do cliente. 
 
-O **Product Owner (PO)** é o principal responsável por conduzir esta fase, garantindo o alinhamento entre as expectativas do cliente e a visão inicial do projeto.
+O **Product Manager (PM)** é o principal responsável por conduzir esta fase, garantindo o alinhamento entre as expectativas do cliente e a visão inicial do projeto.
 
 > [!TIP]
 > Utilize o **[Template: SOW (Statement of Work)](../modelos/sow_template.md)** para documentar os resultados desta fase.

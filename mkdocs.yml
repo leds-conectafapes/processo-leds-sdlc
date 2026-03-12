@@ -52,5 +52,6 @@ nav:
   - Processo SDLC:
     - Visão Geral: sdlc/0_processo.md
     - 1. Planejamento: sdlc/1_planning.md
+    - 2. Discovery: sdlc/2_discovery.md
   - Modelos:
     - SOW (Statement of Work): modelos/sow_template.md
