@@ -1,6 +1,6 @@
-# Visão Geral do SDLC / SDLC Overview
+# Visão Geral do SDLC
 
-O Ciclo de Vida de Desenvolvimento de Software (**SDLC**) do LEDS / The LEDS **Software Development Life Cycle (SDLC)** é baseado em metodologias ágeis e focado na entrega contínua de valor.
+O Ciclo de Vida de Desenvolvimento de Software (**SDLC**) do LEDS é baseado em metodologias ágeis e focado na entrega contínua de valor.
 
 ## Fases do Processo
 
