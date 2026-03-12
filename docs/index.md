@@ -1,6 +1,6 @@
-# Bem-vindo ao Processo LEDS SDLC
+# Bem-vindo ao Ciclo de Vida de Desenvolvimento de Software (SDLC)
 
-Esta documentação detalha o Ciclo de Vida de Desenvolvimento de Software (SDLC) adotado pelo Laboratório de Extensão em Desenvolvimento de Soluções (LEDS).
+Esta documentação detalha o **Ciclo de Vida de Desenvolvimento de Software**,  **Software Development Life Cycle, (SDLC)** adotado pelo Laboratório de Extensão em Desenvolvimento de Soluções (LEDS).
 
 ## Objetivos
 

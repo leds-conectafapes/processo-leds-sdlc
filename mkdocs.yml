@@ -1,6 +1,10 @@
-site_name: LEDS SDLC Process
-site_description: Documentação do Processo de Desenvolvimento de Software do LEDS
+site_name: LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software
+site_description: Documentação do Ciclo de Vida de Desenvolvimento de Software (SDLC) do LEDS / LEDS Software Development Life Cycle (SDLC) Documentation
 site_author: LEDS
+copyright: Copyright &copy; 2026 LEDS
+
+repo_name: leds-conectafapes/processo-leds-sdlc
+repo_url: https://github.com/leds-conectafapes/processo-leds-sdlc
 
 extra_css:
   - stylesheets/extra.css
@@ -23,13 +27,20 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Alternar para modo claro
+  font:
+    text: Outfit
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - navigation.expand
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate
 
 markdown_extensions:
   - admonition
@@ -44,6 +55,12 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - attr_list
   - md_in_html
 
@@ -55,7 +72,7 @@ nav:
   - Estrutura da Equipe: team/equipe.md
   - Processo SDLC:
     - Visão Geral: sdlc/0_processo.md
-    - 1. Planejamento: sdlc/1_planning.md
+    - 1. Statement of Work (SOW): sdlc/1_sow.md
     - 2. Discovery: sdlc/2_discovery.md
   - Modelos:
     - SOW (Statement of Work): modelos/sow_template.md
