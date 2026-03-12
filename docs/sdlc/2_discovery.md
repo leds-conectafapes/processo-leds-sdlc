@@ -4,7 +4,7 @@ Responsável por entender o problema a ser resolvido, buscando entender o domini
 
 O **Product Owner (PO)** é o principal responsável por conduzir esta fase, garantindo o alinhamento entre as expectativas do cliente e o entendimento real do problema.
 
-### Questões Fundamentais de Descoberta:
+### Questões Fundamentais do Discovery:
 
 * **Qual o domínio do problema e em qual categoria ele se encaixa?** Entender o domínio permite dominar conceitos, jargões e informações relevantes.
     * *Exemplo*: Se o projeto é sobre gestão de inventário, o domínio é "Logística/Patrimônio" e a categoria é "Gestão de Ativos".

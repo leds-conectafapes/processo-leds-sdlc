@@ -29,4 +29,4 @@ Este documento serve como template para a fase de **Planning**. O Product Owner 
 *   **Cronograma e Custo**: [Estimativa de tempo e esforço]
 
 ---
-> **Dica**: Utilize a metodologia SMART para os objetivos e consulte o [Exemplo de SOW](../sdlc/1_planning.md#exemplo-de-sow) se precisar de inspiração.
+> **Dica**: Utilize a metodologia SMART para os objetivos e consulte o [Exemplo de SOW](../sdlc/1_planning.md#artefato-gerado-versao-inicial-do-sow) se precisar de inspiração.
