@@ -69,13 +69,16 @@ plugins:
 
 nav:
   - Início: index.md
-  - Estrutura da Equipe: team/equipe.md
+  - Equipe:
+    - Estrutura: team/equipe.md
+    - Organização de Equipes: team/processo-less.md
   - Processo SDLC:
     - Visão Geral: sdlc/0_processo.md
     - 1. Statement of Work (SOW): sdlc/1_sow.md
     - 2. Discovery: sdlc/2_discovery.md
   - Modelos:
     - SOW (Statement of Work): modelos/sow_template.md
+    - Benchmarking e Análise Competitiva: modelos/benchmarking_template.md
     - Base de Conhecimento:
       - Visão Geral: modelos/knowledge/overview.md
       - Mapa de Domínios: modelos/knowledge/domain-map.md
