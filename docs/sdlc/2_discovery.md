@@ -53,8 +53,8 @@ graph LR
     end
 
     subgraph Saída
-        VG[Visão Geral do Domínio]
-        MD[Mapa de Domínios]
+        PV[Product Vision]
+        PS[Personas]
         DR[Domínios de Referência]
         DT[Dicionário de Termos]
         DSM[Design Structure Matrix]
@@ -66,19 +66,18 @@ graph LR
     CLI --> Q
     Q --> P
     Q --> A
-    A --> VG
-    A --> MD
+    A --> PV
+    A --> PS
     A --> DR
     A --> DT
     A --> DSM
     P --> BM
-    VG --> SR
-    MD --> SR
+    PV --> SR
     BM --> SR
 ```
 
 - **Entradas**: SOW inicial (visão de alto nível) e necessidades brutas do cliente.
-- **Análise de Domínio** gera: Visão Geral, Mapa de Domínios, Domínios de Referência, Dicionário de Termos e DSM.
+- **Análise de Domínio** gera: Product Vision, Personas, Domínios de Referência, Dicionário de Termos e DSM.
 - **Pesquisa e Benchmarking** gera: Benchmarking e Análise Competitiva (dores, soluções de mercado, KPIs, gaps).
 - **SOW Revisado** consolida os achados da análise de domínio e do benchmarking.
 
@@ -86,96 +85,100 @@ graph LR
 
 A fase de Discovery produz os seguintes artefatos, que formam a base para todas as etapas seguintes do processo:
 
-| Artefato | O que faz |
-|----------|-----------|
-| **Visão Geral da Base de Conhecimento** | Contextualiza o domínio de negócio, estabelecendo os fundamentos que a equipe precisa dominar |
-| **Mapa de Domínios** | Visualiza as fronteiras e interações entre os subdomínios do produto |
-| **Domínios de Referência** | Detalha cada domínio com conceitos, regras de negócio e responsabilidades |
-| **Dicionário de Termos** | Padroniza a linguagem entre equipe técnica e stakeholders |
-| **Design Structure Matrix (DSM)** | Mapeia dependências entre domínios, orientando a ordem de desenvolvimento |
-| **Benchmarking e Análise Competitiva** | Identifica dores do cliente, soluções de mercado, KPIs de sucesso e capacidades requeridas |
-| **SOW Revisado** | Atualiza o Statement of Work com o entendimento adquirido no Discovery |
+| Artefato | O que faz | Template |
+|----------|-----------|---------|
+| **Product Vision** | Consolida propósito do produto, mapa de domínios com módulos, regras de negócio transversais e fundamentação legal | [product-vision.md](../modelos/discovery/product-vision.md) |
+| **Personas** | Cataloga os atores do sistema com rastreabilidade por domínio e módulo | [personas.md](../modelos/discovery/personas.md) |
+| **Domínios de Referência** | Detalha cada domínio com funcionalidades numeradas, persona responsável e fundamentação legal | [domains/NN-dominio-exemplo.md](../modelos/discovery/domains/NN-dominio-exemplo.md) |
+| **Dicionário de Termos** | Padroniza a linguagem com seções temáticas indexadas e rastreabilidade para a fonte canônica | [glossario.md](../modelos/discovery/glossario.md) |
+| **Design Structure Matrix (DSM)** | Mapeia dependências entre domínios, orientando a ordem de desenvolvimento | [dsm.md](../modelos/knowledge/dsm.md) |
+| **Benchmarking e Análise Competitiva** | Identifica dores do cliente, soluções de mercado, KPIs de sucesso e capacidades requeridas | [benchmarking_template.md](../modelos/benchmarking_template.md) |
+| **SOW Revisado** | Atualiza o Statement of Work com o entendimento adquirido no Discovery | [sow_template.md](../modelos/sow_template.md) |
 
-Os artefatos de Visão Geral, Mapa de Domínios, Domínios de Referência, Dicionário de Termos e DSM compõem a **Base de Conhecimento** do projeto — documentação que treina a equipe nos conceitos, domínios e jargões do projeto.
+> [!TIP]
+> Os templates dos artefatos estão em [`docs/modelos/discovery/`](../modelos/discovery/). Cada projeto deve gerar seus próprios arquivos seguindo esses formatos, adaptando os placeholders `{...}` para o contexto específico.
+
+Os artefatos de Product Vision, Personas, Domínios de Referência, Dicionário de Termos e DSM compõem a **Base de Conhecimento** do projeto — documentação que treina a equipe nos conceitos, domínios e jargões do projeto.
 
 ---
 
-### Visão Geral da Base de Conhecimento
+### Product Vision
 
-Documento central que contextualiza o domínio de negócio do projeto, estabelecendo os fundamentos para o entendimento da equipe. Template: **[Visão Geral](../modelos/knowledge/overview.md)**
+Documento central que consolida o propósito do produto, o mapa de domínios com os módulos que os implementam, as regras de negócio transversais e a fundamentação legal. Serve como ponto de partida para toda a equipe e referência de navegação para os demais artefatos da base de conhecimento. Template: **[Product Vision](../modelos/discovery/product-vision.md)**
 
-*Exemplo*: Para um sistema de gestão de fomento, a visão geral descreve o ciclo de vida de um grant, os papéis envolvidos e os entregáveis de cada fase:
+O arquivo segue a estrutura:
 
-```mermaid
-graph LR
-    A[Pré-Concessão] --> B[Concessão]
-    B --> C[Pós-Concessão]
-```
+- **Propósito**: descrição do problema que o sistema resolve e do seu objetivo central.
+- **Referências rápidas**: links para `personas.md` e `glossario.md`.
+- **Mapa de Domínios**: tabela numerada (`# / Domínio / Descrição / Módulos`) com link para cada arquivo `domains/NN-nome.md`.
+- **Regras de Negócio Transversais**: regras que atravessam múltiplos domínios e não pertencem exclusivamente a nenhum.
+- **Fundamentação Legal**: tabela `Artigo / Tema / Domínios Relacionados` referenciando a legislação base do projeto.
 
-| Fase | Resumo | Entregáveis |
-| :--- | :--- | :--- |
-| **Pré-Concessão** | Planejamento, publicação de editais e submissão de propostas | Edital (FOA) e Propostas |
-| **Concessão** | Avaliação, seleção e formalização do financiamento | Termo de Outorga |
-| **Pós-Concessão** | Execução, monitoramento e prestação de contas | Relatórios de Progresso |
+*Exemplo — Mapa de Domínios:*
 
-### Mapa de Domínios
+| # | Domínio | Descrição | Módulos |
+|---|---------|-----------|---------|
+| 01 | [Corporativo e Administrativo](domains/01-corporativo.md) | Identidades, cadastros mestres e estrutura organizacional | M001, M005, M008 |
+| 02 | [Planejamento e Estratégia](domains/02-planejamento.md) | Plano estratégico, parcerias e programas de fomento | M010 |
+| 03 | [Fomento Pre-Award](domains/03-fomento-pre-award.md) | Captação, seleção e contratação de iniciativas | M011 |
 
-Visualização estratégica que delimita as fronteiras e interações entre os diferentes subdomínios mapeados. Template: **[Mapa de Domínios](../modelos/knowledge/domain-map.md)**
+### Personas
 
-*Exemplo*:
+Catálogo dos atores do sistema, estruturado em duas camadas: uma **tabela de rastreabilidade** que cruza Persona × Domínios onde atua × Módulos principais, e **agrupamentos temáticos** que descrevem cada persona com suas responsabilidades. Template: **[Personas](../modelos/discovery/personas.md)**
 
-```mermaid
-mindmap
-  root((Sistema GMS))
-    Grantor
-      Edital FOA
-      Peer Review
-      Aprovação
-    Grantee
-      Submissão
-      Execução Técnica
-    Financial
-      Plano de Contas
-      Sponsor
-    Payments
-      EDI
-      Integração Bancária
-```
+Cada persona é definida uma única vez neste artefato e apenas referenciada nas tabelas de funcionalidades dos Domínios de Referência — eliminando duplicação de descrições.
+
+*Exemplo — Tabela de Rastreabilidade:*
+
+| Persona | Domínios onde atua | Módulos principais |
+|---------|--------------------|--------------------|
+| Coordenador | 03 (submissão), 04 (execução, prestação de contas) | M003, M009, M012 |
+| Bolsista | 04 (bolsas, plano de trabalho) | M009 |
+| Analista | 04 (gestão de projetos), 05 (pagamentos) | M004, M009 |
+
+*Agrupamentos sugeridos:* Usuários Externos (proponentes, beneficiários), Instituições (dirigentes, unidades), Operadores Internos (analistas, áreas técnicas), Órgãos de Controle e Avaliadores Externos.
 
 ### Domínios de Referência
 
-Catálogo de detalhamento técnico e de negócio para áreas específicas (ex: [Pagamentos](../modelos/knowledge/domains/payments.md), [Compliance](../modelos/knowledge/domains/compliance.md), [Gestão Financeira](../modelos/knowledge/domains/financial-management.md)), que servem como guia para o desenvolvimento e treinamento.
+Catálogo de domínios do sistema. Cada domínio é descrito em um arquivo nomeado `NN-nome-do-dominio.md` (ex.: `01-corporativo.md`, `03-fomento-pre-award.md`), mantido na pasta `domains/` ao lado do `product-vision.md`. Template: **[NN-dominio-exemplo.md](../modelos/discovery/domains/NN-dominio-exemplo.md)**
 
-*Exemplo*: O documento do domínio de Pagamentos detalha a estrutura e responsabilidades da área:
+Cada arquivo de domínio segue a estrutura:
 
-```mermaid
-mindmap
-  root((Payments))
-    Ingestão
-      Ordem de Pagamento
-      Validação de Interface
-    Integração EDI
-      Remessa Bancária
-      Retorno de Lançamento
-    Automação
-      Agendamento Batch
-      Notificação de Liquidação
+- **Cabeçalho**: título `Domain NN — Nome`, descrição resumida e lista de módulos que o implementam (`**Módulos que implementam este domain:** MXxx, MYyy`).
+- **Link para o glossário**: referência ao `glossario.md` para consulta de termos.
+- **Subseções numeradas hierarquicamente** (`N.1`, `N.2`, …), cada uma descrevendo uma capacidade do domínio com parágrafo introdutório e, quando relevante, ciclo de vida (estados e transições) da entidade principal.
+- **Tabela de funcionalidades** em cada subseção com as colunas: `# / Funcionalidade / Descrição / Persona / Fundamentação Legal`.
+
+*Exemplo — cabeçalho e tabela de funcionalidades:*
+
+```
+# Domain 03 — Fomento Pre-Award (Captação e Seleção)
+
+Fluxo desde a publicação do edital até a contratação da iniciativa.
+Glossário dos conceitos centrais em [../glossario.md](../glossario.md).
+
+**Módulos que implementam este domain:** M011, M002
+
+## 3.1 Configuração da Captação
+
+| # | Funcionalidade | Descrição | Persona | Fundamentação Legal |
+|---|---------------|-----------|---------|---------------------|
+| 3.1.1 | Criar Captação | Configurar nova captação definindo tipo, período e valor aportado | Analista | Art. 15, I |
 ```
 
 ### Dicionário de Termos
 
-Glossário padronizado com jargões e conceitos fundamentais, garantindo uma linguagem onipresente entre stakeholders e a equipe técnica. Template: **[Dicionário de Termos](../modelos/knowledge/dictionary.md)**
+Glossário centralizado estruturado em **seções temáticas numeradas** (ex.: Personas, Instrumentos de Fomento, Vigência e Aditivos, Organizações, Enumerações Principais). Cada entrada inclui o termo, sua definição concisa e um campo **Definido em** que aponta para a fonte canônica (módulo, domínio ou ADR). Template: **[Glossário](../modelos/discovery/glossario.md)**
 
-*Exemplo*:
+Regra de ouro: este arquivo **define e linka**, não reformula o conteúdo das fontes. Ao introduzir um novo conceito em um módulo, adiciona-se a entrada aqui com link canônico — nunca duplicando regras de negócio.
 
-| Termo | Definição |
-| :--- | :--- |
-| **Applicant** | Proponente que submete propostas para financiamento |
-| **Grantor** | Concedente/agência que aloca e supervisiona fundos |
-| **Grantee** | Receptor principal que recebe o award e executa o projeto |
-| **Subrecipient** | Sub-receptor que recebe subaward para parte específica do projeto |
-| **FOA/RFP** | Funding Opportunity Announcement — documento que anuncia oportunidades de financiamento (ex: "Edital FAPES Nº 13/2025") |
-| **Coordenador** | Líder responsável pelo projeto aprovado (mapeia para Grantee) |
+*Exemplo — seção temática:*
+
+| Termo | Definição | Definido em |
+| :--- | :--- | :--- |
+| **Edital** | Documento público que formaliza uma Captação, com regras, cronograma e requisitos | [Domain 03](domains/03-nome.md) |
+| **Projeto Contratado** | Iniciativa aprovada, formalizada por Termo de Outorga, em execução | [M003](../../implementation/modules/M003/README.md) |
+| **Termo de Outorga** | Instrumento formal de fomento assinado pelo Coordenador | [M003](../../implementation/modules/M003/README.md) |
 
 ### Design Structure Matrix (DSM)
 
