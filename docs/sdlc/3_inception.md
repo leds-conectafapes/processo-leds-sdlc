@@ -6,6 +6,29 @@ O principal resultado dessa fase é o **Backlog Inicial** — um conjunto priori
 
 O **Product Owner (PO) Técnico** e o **Tech Lead** são os principais responsáveis por conduzir esta fase. O **PO Técnico** garante o alinhamento entre as capacidades definidas no Discovery e as funcionalidades priorizadas no backlog. O **Tech Lead** conduz as decisões de arquitetura e os ADRs. O **Designer de UX de Produto** contribui na construção do Story Map, conectando as jornadas de usuário às features.
 
+## Ciclo Evolutivo com o Discovery
+
+Discovery e Inception não são fases estritamente sequenciais — elas formam um **ciclo evolutivo e incremental**. A Inception começa com o entendimento construído no Discovery, mas inevitavelmente revela perguntas que ainda não foram respondidas: um domínio mal compreendido, uma regra de negócio ambígua, uma integração cuja complexidade só ficou visível ao tentar arquitetar a solução.
+
+Quando isso ocorre, a equipe retorna ao Discovery para aprofundar o entendimento daquele ponto específico — sem precisar repetir toda a fase — e volta à Inception com o conhecimento atualizado. Esse ciclo se repete quantas vezes forem necessárias até que a equipe tenha confiança suficiente para iniciar o desenvolvimento.
+
+```mermaid
+graph LR
+    DISC[Discovery] -->|base de conhecimento| INC[Inception]
+    INC -->|gaps de domínio identificados| DISC
+    INC -->|confiança suficiente| DEV[Desenvolvimento]
+```
+
+**Gatilhos comuns para retornar ao Discovery durante a Inception:**
+
+- Story Mapping revela uma jornada de usuário sem domínio de referência mapeado.
+- Um ADR não pode ser decidido por falta de entendimento de uma integração ou restrição legal.
+- A priorização do backlog expõe uma capacidade de negócio que o Discovery não cobriu.
+- A definição do MVP gera dúvida sobre se uma funcionalidade é essencial ou acessória — dúvida que só é resolvida entendendo melhor o problema.
+
+> [!TIP]
+> Não trate o retorno ao Discovery como um atraso — trate como aprendizado antecipado. Um gap descoberto na Inception custa muito menos do que um gap descoberto no desenvolvimento.
+
 ## Questões Fundamentais da Inception
 
 * **Quais produtos (módulos/componentes) devem ser construídos para resolver os problemas identificados no Discovery?** Os domínios e capacidades do Discovery são o ponto de partida — cada domínio geralmente se traduz em um ou mais módulos de software.
