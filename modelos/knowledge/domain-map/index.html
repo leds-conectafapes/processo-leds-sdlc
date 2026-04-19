@@ -1,0 +1,2051 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do Ciclo de Vida de Desenvolvimento de Software (SDLC) do LEDS / LEDS Software Development Life Cycle (SDLC) Documentation">
+      
+      
+        <meta name="author" content="LEDS">
+      
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../dictionary/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Mapa de Domínios - LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Outfit";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-mapa-de-dominio" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" class="md-header__button md-logo" aria-label="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mapa de Domínios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/leds-conectafapes/processo-leds-sdlc" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leds-conectafapes/processo-leds-sdlc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../team/equipe/" class="md-tabs__link">
+          
+  
+  
+  Equipe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sdlc/0_processo/" class="md-tabs__link">
+          
+  
+  
+  Processo SDLC
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../sow_template/" class="md-tabs__link">
+          
+  
+  
+  Modelos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" class="md-nav__button md-logo" aria-label="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/leds-conectafapes/processo-leds-sdlc" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leds-conectafapes/processo-leds-sdlc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Equipe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../team/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estrutura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../team/processo-less/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização de Equipes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processo SDLC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Processo SDLC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdlc/0_processo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdlc/1_sow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Statement of Work (SOW)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sdlc/2_discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Discovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sow_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOW (Statement of Work)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../benchmarking_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarking e Análise Competitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de Conhecimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de Conhecimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Domínios
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Domínios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mapa-de-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Mapa de Dominio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Domínios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-subdominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Subdomínios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Subdomínios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-grantor-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Grantor Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-grantee-institution-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Grantee Institution Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-grantee-domain-coordenador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Grantee Domain (Coordenador)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-subrecipient-domain-bolsista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Subrecipient Domain (Bolsista)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-compliance-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Compliance Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-payments-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Payments Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-financial-management-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Financial Management Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-componentes-por-subdominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Componentes por Subdomínio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-eventos-de-integracao-domain-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Eventos de Integração (Domain Events)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-relacionamento-entre-dominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Relacionamento entre Domínios
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dictionary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dicionário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Domínios (DSM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_5" id="__nav_4_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domínios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Domínios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/external-integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrações Externas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/financial-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão Financeira
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/grantee-institution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instituição de Execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/grantee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beneficiário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/grantor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concessor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/payments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domains/subrecipient/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mapa-de-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Mapa de Dominio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Domínios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-subdominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Subdomínios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Subdomínios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-grantor-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Grantor Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-grantee-institution-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Grantee Institution Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-grantee-domain-coordenador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Grantee Domain (Coordenador)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-subrecipient-domain-bolsista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Subrecipient Domain (Bolsista)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-compliance-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Compliance Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-payments-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Payments Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-financial-management-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Financial Management Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-componentes-por-subdominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Componentes por Subdomínio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-eventos-de-integracao-domain-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Eventos de Integração (Domain Events)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-relacionamento-entre-dominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Relacionamento entre Domínios
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Mapa de Domínios</h1>
+
+<h2 id="1-mapa-de-dominio">1. Mapa de Dominio</h2>
+<p>Abaixo segue uma relação dos domínios presentes em um Grant Management System.</p>
+<pre class="mermaid"><code>mindmap
+  root((ConectaFAPES GMS))
+    Grantor Domain
+      Edital FOA/RFP
+      Peer Review
+      Aprovação Award
+      Gestão de Programas
+    Institution Domain
+      Gestão de Portfólio
+      Sponsored Programs
+      Aprovação Institucional
+    Grantee Domain
+      Submissão Proposta
+      Execução Técnica
+      Gestão de Equipe
+    Subrecipient Domain
+      Bolsas Individuais
+      Planos de Trabalho
+      Reporte de Atividade
+    Financial Domain
+      Sponsor (Financiador)
+      Programa Estratégico
+      Comitê Gestor
+      Plano de Contas
+    Payments Domain
+      Order Ingestion
+      EDI / Folha
+      Settlement &amp; Reconciliation
+    Compliance Domain
+      SIGEF/TCU Integration
+      Audit Trail
+      KPI Monitoring
+    External Integrations
+      WhatsApp / E-mail
+      Lattes / CNPq
+      RFB / SEFAZ
+      E-DOCS / SIGFAPES</code></pre>
+<hr />
+<h2 id="2-dominios">2. Domínios</h2>
+<p>Domínios mapeados diretamente aos papéis:</p>
+<ul>
+<li>
+<p><strong><a href="../domains/grantor/">Grantor Domain</a></strong> - <strong>Grantor</strong> gerencia <strong>FOA/RFP (Edital)</strong>, aprovações (<strong>Award</strong>) e supervisão no <strong>Grantor Portal</strong>.</p>
+</li>
+<li>
+<p><strong><a href="../domains/grantee-institution/">Grantee Institution Domain</a></strong> - <strong>Grantee Institution</strong> e <strong>Sponsored Programs Manager/Grants Officer</strong> com visão agregada de portfólio e <strong>KPI</strong> institucionais.</p>
+</li>
+<li>
+<p><strong><a href="../domains/grantee/">Grantee Domain</a></strong> - <strong>Grantee/Recipient</strong> (<strong>Coordenador</strong>) gerencia projeto aprovado no <strong>Applicant Portal</strong> (<strong>Award</strong> e <strong>Pós-Award</strong>).</p>
+</li>
+<li>
+<p><strong><a href="../domains/subrecipient/">Subrecipient Domain</a></strong> - <strong>Subrecipient</strong> e <strong>Bolsista</strong> executam tarefas específicas sob <strong>Coordenador</strong> no <strong>Applicant Portal</strong>.</p>
+</li>
+<li>
+<p><strong><a href="../domains/financial-management/">Financial Management</a></strong> - Gestão de alto nível (Sponsor, Programa, Comitê e Contas).</p>
+</li>
+<li>
+<p><strong><a href="../domains/payments/">Payments Domain</a></strong> - <strong>Payment Gateway</strong> que executa o pagamento técnico (EDI, PIX, TED) de forma agnóstica a partir de ordens de pagamento.</p>
+</li>
+<li>
+<p><strong><a href="../domains/compliance/">Compliance Domain</a></strong> - Transversal para auditoria e conformidade regulatória.</p>
+</li>
+<li>
+<p><strong><a href="../domains/external-integrations/">External Integrations</a></strong> - Gateway técnico para sistemas externos (Lattes, SIGEF, WhatsApp).</p>
+</li>
+</ul>
+<h2 id="3-subdominios">3. Subdomínios</h2>
+<h3 id="31-grantor-domain">3.1 Grantor Domain</h3>
+<pre class="mermaid"><code>graph TD
+    Grantor["Grantor Domain"] --&gt; FOA["FOA/RFP Planning (Edital)"]
+    Grantor --&gt; Review["Award Review &amp; Approval"]
+    Grantor --&gt; Oversight["Grantor Oversight (Portal)"]</code></pre>
+<ul>
+<li>
+<p><strong>Planning (FOA/Edital)</strong>: Criação estratégica de chamadas públicas, alocação orçamentária e definição de critérios. Inclui FOA Builder para gerar editais TCU-compliant automaticamente.</p>
+</li>
+<li>
+<p><strong>Review &amp; Approval</strong>: Avaliação peer-review, scoring automatizado e workflow de aprovação hierárquica (comitê → diretor).</p>
+</li>
+<li>
+<p><strong>Oversight</strong>: Monitoramento em tempo real de KPIs de portfólio, alertas de risco e dashboards estratégicos.</p>
+</li>
+</ul>
+<h3 id="32-grantee-institution-domain">3.2 Grantee Institution Domain</h3>
+<pre class="mermaid"><code>graph TD
+    Institution["Grantee Institution Domain"] --&gt; Portfolio["Portfolio Management"]
+    Institution --&gt; Sponsored["Sponsored Programs (Grants Officer)"]
+    Institution --&gt; InstKPI["Institutional KPIs"]</code></pre>
+<ul>
+<li>
+<p><strong>Portfolio Management</strong>: Visão consolidada de todos os grants da instituição, cross-project analytics e alocação de overhead.</p>
+</li>
+<li>
+<p><strong>Sponsored Programs</strong>: Console para gestores de programas patrocinados, com views departamentais e aprovações internas.</p>
+</li>
+<li>
+<p><strong>Institutional Reporting</strong>: Relatórios executivos agregados (reitor/pro-reitor), KPIs institucionais e exportação para sistemas acadêmicos.</p>
+</li>
+</ul>
+<h3 id="33-grantee-domain-coordenador">3.3 Grantee Domain (Coordenador)</h3>
+<pre class="mermaid"><code>graph TD
+    Grantee["Grantee Domain (Coordenador)"] --&gt; Pre["Pré-Award Submission"]
+    Grantee --&gt; Mgt["Award Management"]
+    Grantee --&gt; Exec["Pós-Award Execution"]</code></pre>
+<ul>
+<li>
+<p><strong>Proposal Submission</strong>: Portal do proponente para submissão de propostas, formulários dinâmicos e pré-validações (Lattes).</p>
+</li>
+<li>
+<p><strong>Award Management</strong>: Após aprovação, gerencia termos do award, plano orçamentário e modificações contratuais.</p>
+</li>
+<li>
+<p><strong>Project Execution</strong>: Tracking de milestones, log de despesas, relatórios de progresso e requests de desembolsos.</p>
+</li>
+</ul>
+<h3 id="34-subrecipient-domain-bolsista">3.4 Subrecipient Domain (Bolsista)</h3>
+<pre class="mermaid"><code>graph TD
+    Subrecipient["Subrecipient Domain (Bolsista)"] --&gt; Alloc["Subaward Allocation"]
+    Subrecipient --&gt; Oblig["Subrecipient Obligations"]
+    Subrecipient --&gt; Team["Team Tasks (Portal)"]</code></pre>
+<ul>
+<li>
+<p><strong>Scholarship Management</strong>: Dashboard de bolsas individuais, histórico de obrigações e visualizador de pagamentos.</p>
+</li>
+<li>
+<p><strong>Subrecipient Allocation</strong>: Gerenciamento de subawards para bolsistas/parceiros, incluindo alocação automática por perfil.</p>
+</li>
+<li>
+<p><strong>Team Collaboration</strong>: Chat interno, compartilhamento de documentos e assignment de tarefas por projeto.</p>
+</li>
+</ul>
+<h3 id="35-compliance-domain">3.5 Compliance Domain</h3>
+<pre class="mermaid"><code>graph TD
+    Compliance["Compliance Domain"] --&gt; Val["Pré-Award Validation"]
+    Compliance --&gt; AwardComp["Award Compliance"]
+    Compliance --&gt; PostKPI["Pós-Award Reporting &amp; KPIs"]</code></pre>
+<ul>
+<li>
+<p><strong>Financial Tracking</strong>: Integração SIGEF nativa, engine de desembolsos e validador de acúmulo de bolsas CNPq/FAPES.</p>
+</li>
+<li>
+<p><strong>Reporting Engine</strong>: Geração automática de relatórios TCU, templates pré-configurados e submissão programática.</p>
+</li>
+<li>
+<p><strong>Audit Trail</strong>: Log imutável de todas as ações, checker de compliance e alertas proativos de riscos.</p>
+</li>
+</ul>
+<h3 id="36-payments-domain">3.6 Payments Domain</h3>
+<pre class="mermaid"><code>graph TD
+    Payments["Payments Domain"] --&gt; Ingestion["Order Ingestion (API/Worker)"]
+    Payments --&gt; EDI["Bank EDI &amp; Payroll Exec"]
+    Payments --&gt; Settlement["Bank Reconciliation"]</code></pre>
+<ul>
+<li><strong>Order Ingestion</strong>: Recebimento e validação de ordens de pagamento provenientes de outros domínios (Bolsas, Concessão).</li>
+<li><strong>Payment Execution</strong>: Processamento técnico via arquivos EDI bancários, integração com gateways de pagamento ou folha de pagamento.</li>
+<li><strong>Settlement &amp; Reconciliation</strong>: Confirmação de liquidação financeira e reporte de sucesso/erro para o domínio de origem.</li>
+</ul>
+<h3 id="37-financial-management-domain">3.7 Financial Management Domain</h3>
+<pre class="mermaid"><code>graph TD
+    Financial["Financial Management Domain"] --&gt; Accounting["Gestão Contabil"]
+    Financial --&gt; Execution["Execução Financeira"]
+    Financial --&gt; Units["Unidades e Fontes"]
+    Financial --&gt; Budget["Planejamento Orçamentário"]</code></pre>
+<ul>
+<li><strong>Accounting</strong>: Manutenção do plano de contas, rubricas (diárias, material, serviços) e associações com editais.</li>
+<li><strong>Execution</strong>: Monitoramento de saldos em tempo real e tracking de empenhos (Orçado x Empenhado x Pago).</li>
+<li><strong>Resource Units</strong>: Gestão de Management Units (UGs), subcontas e registro das origens do fomento (Tesouro, Emendas).</li>
+<li><strong>Budget Planning</strong>: Elaboração de Allocation Plans, cronogramas de desembolso e relatórios de fluxo de caixa.</li>
+</ul>
+<h2 id="4-componentes-por-subdominio">4. Componentes por Subdomínio</h2>
+<table>
+<thead>
+<tr>
+<th>Domínio</th>
+<th>Subdomínio</th>
+<th>Componentes (Termos Glossário)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grantor</strong></td>
+<td>FOA/RFP Planning</td>
+<td>FOA Builder, Edital Generator (<strong>FOA/RFP</strong>)</td>
+</tr>
+<tr>
+<td><strong>Grantor</strong></td>
+<td>Award Review</td>
+<td>Scoring Engine, Approval Workflow (<strong>Award</strong>)</td>
+</tr>
+<tr>
+<td><strong>Grantee Institution</strong></td>
+<td>Portfolio</td>
+<td>Institution Dashboard, KPI Analytics (<strong>Sponsored Programs Manager</strong>)</td>
+</tr>
+<tr>
+<td><strong>Grantee</strong></td>
+<td>Pré-Award</td>
+<td>Proposal Submission, Applicant Portal (<strong>Applicant</strong>)</td>
+</tr>
+<tr>
+<td><strong>Grantee</strong></td>
+<td>Pós-Award</td>
+<td>Award Dashboard, Execution Tracker (<strong>Grantee/Recipient</strong>)</td>
+</tr>
+<tr>
+<td><strong>Subrecipient</strong></td>
+<td>Bolsista</td>
+<td>Bolsa Viewer, Obligation Tracker (<strong>Bolsista</strong>)</td>
+</tr>
+<tr>
+<td><strong>Financial</strong></td>
+<td>Accounting</td>
+<td>Chart of Accounts, Rubricas (diárias, material, etc.)</td>
+</tr>
+<tr>
+<td><strong>Financial</strong></td>
+<td>Execution</td>
+<td>Real-time Balance, Dashboards</td>
+</tr>
+<tr>
+<td><strong>Financial</strong></td>
+<td>Resource Units</td>
+<td>Management Units, Sources, Initial Balance</td>
+</tr>
+<tr>
+<td><strong>Financial</strong></td>
+<td>Budget Planning</td>
+<td>Allocation Plans, Cash Flow Report</td>
+</tr>
+<tr>
+<td><strong>Payments</strong></td>
+<td>Ingestion</td>
+<td>Order Registry, Payload Validation</td>
+</tr>
+<tr>
+<td><strong>Payments</strong></td>
+<td>Execution</td>
+<td>EDI Service (@-EDI), Payroll Generator</td>
+</tr>
+<tr>
+<td><strong>Payments</strong></td>
+<td>Reconciliation</td>
+<td>Settlement Confirmation, Bank Extratos</td>
+</tr>
+<tr>
+<td><strong>Compliance</strong></td>
+<td>Reporting</td>
+<td>KPI Monitor, Compliance Checker (<strong>Pós-Award</strong>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-eventos-de-integracao-domain-events">5. Eventos de Integração (Domain Events)</h2>
+<table>
+<thead>
+<tr>
+<th>Evento</th>
+<th>Origem</th>
+<th>Destino</th>
+<th>Descrição</th>
+<th>Fase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>FOA/RFP Published</code></strong></td>
+<td><strong>Grantor</strong></td>
+<td><strong>Grantee Institution</strong></td>
+<td>Edital disponível, inicia <strong>Pré-Award</strong></td>
+<td>Pré-Award</td>
+</tr>
+<tr>
+<td><strong><code>Proposal Submitted</code></strong></td>
+<td><strong>Grantee</strong> (<strong>Applicant</strong>)</td>
+<td><strong>Grantor</strong>, <strong>Institution</strong></td>
+<td>Proposta validada via <strong>Applicant Portal</strong></td>
+<td>Pré-Award</td>
+</tr>
+<tr>
+<td><strong><code>Award Approved</code></strong></td>
+<td><strong>Grantor</strong></td>
+<td><strong>Grantee</strong>, <strong>Institution</strong>, <strong>Subrecipient</strong></td>
+<td>Transição <strong>Award</strong>, ativa dashboards</td>
+<td>Award</td>
+</tr>
+<tr>
+<td><strong><code>Award Accepted</code></strong></td>
+<td><strong>Institution</strong></td>
+<td><strong>Grantee</strong>, <strong>Compliance</strong></td>
+<td>Inicia <strong>Pós-Award</strong> execução</td>
+<td>Award → Pós</td>
+</tr>
+<tr>
+<td><strong><code>Subaward Allocated</code></strong></td>
+<td><strong>Grantee</strong> (<strong>Coordenador</strong>)</td>
+<td><strong>Subrecipient</strong> (<strong>Bolsista</strong>)</td>
+<td>Alocação bolsas individuais</td>
+<td>Pós-Award</td>
+</tr>
+<tr>
+<td><strong><code>Payment Order Issued</code></strong></td>
+<td><strong>Grantor</strong> / <strong>Subrecipient</strong></td>
+<td><strong>Payments</strong></td>
+<td>Envio de ordem para processamento financeiro</td>
+<td>Pós-Award</td>
+</tr>
+<tr>
+<td><strong><code>Payment Executed</code></strong></td>
+<td><strong>Payments</strong></td>
+<td><strong>Compliance</strong>, <strong>Financial</strong>, Origem</td>
+<td>Confirmação de liquidação bancária</td>
+<td>Pós-Award</td>
+</tr>
+<tr>
+<td><strong><code>Disbursement Requested</code></strong></td>
+<td><strong>Grantee/Subrecipient</strong></td>
+<td><strong>Compliance</strong>, <strong>Financial</strong></td>
+<td>Valida <strong>SIGEF</strong> e saldo antes da ordem</td>
+<td>Pós-Award</td>
+</tr>
+<tr>
+<td><strong><code>Budget Allocated</code></strong></td>
+<td><strong>Financial</strong></td>
+<td><strong>Grantor</strong>, <strong>Payments</strong></td>
+<td>Recurso disponível para empenho</td>
+<td>Pós-Award</td>
+</tr>
+<tr>
+<td><strong><code>Compliance Report Generated</code></strong></td>
+<td><strong>Compliance</strong></td>
+<td>Todos</td>
+<td><strong>KPI</strong> final, arquiva ciclo</td>
+<td>Pós → Fechamento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-relacionamento-entre-dominios">6. Relacionamento entre Domínios</h2>
+<p>Este diagrama ilustra as interdependências de alto nível entre os domínios durante o ciclo de vida do fomento.</p>
+<pre class="mermaid"><code>graph TD
+    subgraph Estratégico
+        Grantor["&lt;b&gt;Grantor Domain&lt;/b&gt;&lt;br/&gt;(Regras &amp; Recursos)"]
+        Compliance["&lt;b&gt;Compliance Domain&lt;/b&gt;&lt;br/&gt;(Gatekeeper Transversal)"]
+    end
+
+    subgraph Administrativo
+        Institution["&lt;b&gt;Grantee Institution&lt;/b&gt;&lt;br/&gt;(Governança &amp; Portfólio)"]
+        Financial["&lt;b&gt;Financial Management&lt;/b&gt;&lt;br/&gt;(Contabilidade &amp; Saldos)"]
+        Payments["&lt;b&gt;Payments Domain&lt;/b&gt;&lt;br/&gt;(EDI &amp; Folha)"]
+    end
+
+    subgraph Operacional
+        Grantee["&lt;b&gt;Grantee Domain&lt;/b&gt;&lt;br/&gt;(Execução &amp; Liderança)"]
+        Subrecipient["&lt;b&gt;Subrecipient Domain&lt;/b&gt;&lt;br/&gt;(Tasks &amp; Bolsas)"]
+    end
+
+    %% Fluxo de Regras e Recursos
+    Grantor -- "Define FOA/RFP" --&gt; Grantee
+    Grantor -- "Outorga Award" --&gt; Institution
+    Institution -- "Hospeda Projeto" --&gt; Grantee
+    Grantee -- "Aloca &amp; Coordena" --&gt; Subrecipient
+
+    %% Fluxo de Ordens de Pagamento
+    Grantor -- "Ordem de Pagamento (Grant)" --&gt; Payments
+    Subrecipient -- "Ordem de Pagamento (Bolsa)" --&gt; Payments
+
+    %% Fluxo Financeiro (Execução)
+    Financial -- "Provê Rubricas" --&gt; Payments
+    Payments -- "Executa Crédito" --&gt; Subrecipient
+    Payments -- "Disponibiliza Recurso" --&gt; Grantee
+
+    %% Fluxo de Controle
+    Compliance -. "Monitora" .-&gt; Grantor
+    Compliance -. "Valida" .-&gt; Institution
+    Compliance -. "Audita" .-&gt; Grantee
+    Compliance -. "Verifica Adimplência" .-&gt; Payments</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 LEDS
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.expand", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

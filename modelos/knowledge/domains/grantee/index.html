@@ -1,0 +1,2950 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do Ciclo de Vida de Desenvolvimento de Software (SDLC) do LEDS / LEDS Software Development Life Cycle (SDLC) Documentation">
+      
+      
+        <meta name="author" content="LEDS">
+      
+      
+      
+        <link rel="prev" href="../grantee-institution/">
+      
+      
+        <link rel="next" href="../grantor/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Beneficiário - LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Outfit";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#grantee-domain-grantee" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../../.." title="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" class="md-header__button md-logo" aria-label="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Beneficiário
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/leds-conectafapes/processo-leds-sdlc" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leds-conectafapes/processo-leds-sdlc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../team/equipe/" class="md-tabs__link">
+          
+  
+  
+  Equipe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../sdlc/0_processo/" class="md-tabs__link">
+          
+  
+  
+  Processo SDLC
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../sow_template/" class="md-tabs__link">
+          
+  
+  
+  Modelos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" class="md-nav__button md-logo" aria-label="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/leds-conectafapes/processo-leds-sdlc" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leds-conectafapes/processo-leds-sdlc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Equipe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../team/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estrutura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../team/processo-less/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização de Equipes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processo SDLC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Processo SDLC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../sdlc/0_processo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../sdlc/1_sow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Statement of Work (SOW)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../sdlc/2_discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Discovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sow_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOW (Statement of Work)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../benchmarking_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarking e Análise Competitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de Conhecimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de Conhecimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domain-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Domínios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dictionary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dicionário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dsm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Domínios (DSM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_5" id="__nav_4_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domínios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Domínios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrações Externas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../financial-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão Financeira
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grantee-institution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instituição de Execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beneficiário
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beneficiário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visão Geral
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Visão Geral">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-mapa-mental-do-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Mapa Mental do Domínio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-papel-no-ciclo-de-vida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Papel no Ciclo de Vida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-subdominios-e-componentes-criticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Subdomínios e Componentes Críticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-kpis-do-grantee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. KPIs do Grantee
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-interface-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Interface Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-funcionalidades-detalhadas-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Funcionalidades Detalhadas (Backlog)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Funcionalidades Detalhadas (Backlog)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-capitacao-pre-award" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Capitação (Pre-Award)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-da-iniciativa-contratada-post-award" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão da Iniciativa Contratada (Post-Award)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-recursos-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Recursos (Financeiro)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Equipe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-experience-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Experience &amp; UX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-lifecycle-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Lifecycle (Status)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-visao-consolidada-do-dominio-dsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Visão Consolidada do Domínio (DSM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-grafo-de-execucao-ordem-topologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Grafo de Execução (Ordem Topológica)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-diagrama-de-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Diagrama de Domínio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-relacionamento-com-outros-dominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Relacionamento com outros Domínios
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grantor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concessor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../payments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subrecipient/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visão Geral
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Visão Geral">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-mapa-mental-do-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Mapa Mental do Domínio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-papel-no-ciclo-de-vida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Papel no Ciclo de Vida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-subdominios-e-componentes-criticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Subdomínios e Componentes Críticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-kpis-do-grantee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. KPIs do Grantee
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-interface-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Interface Principal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-funcionalidades-detalhadas-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Funcionalidades Detalhadas (Backlog)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Funcionalidades Detalhadas (Backlog)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-capitacao-pre-award" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Capitação (Pre-Award)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-da-iniciativa-contratada-post-award" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão da Iniciativa Contratada (Post-Award)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-recursos-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Recursos (Financeiro)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Equipe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-experience-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Experience &amp; UX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestao-de-lifecycle-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestão de Lifecycle (Status)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-visao-consolidada-do-dominio-dsm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Visão Consolidada do Domínio (DSM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-grafo-de-execucao-ordem-topologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 Grafo de Execução (Ordem Topológica)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-diagrama-de-dominio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Diagrama de Domínio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-relacionamento-com-outros-dominios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Relacionamento com outros Domínios
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="grantee-domain-grantee">Grantee Domain (Grantee)</h1>
+<h2 id="1-visao-geral">1. Visão Geral</h2>
+<p>Este é o domínio centrado no <strong>Grantee do Projeto</strong> (Grantee/Recipient). É aqui que o "trabalho de campo" acontece, desde a redação da Proposal até a entrega dos relatórios finais de Reporting.</p>
+<h3 id="11-mapa-mental-do-dominio">1.1 Mapa Mental do Domínio</h3>
+<pre class="mermaid"><code>mindmap
+  root((Grantee Domain))
+    Ciclo de Vida
+      Submissão Proposal
+      Contratação (Award)
+      Execução Pós-Award
+    Recursos
+      Gestão de Orçamento
+      Solicitação Desembolso
+      Reporting
+    Liderança
+        Gestão de Equipe
+      Alocação de Grant
+      Colaboração Técnica</code></pre>
+<h2 id="2-papel-no-ciclo-de-vida">2. Papel no Ciclo de Vida</h2>
+<p>O <strong>Grantee</strong> é o motor do sistema no <strong>Applicant Portal</strong>.</p>
+<ul>
+<li><strong>Pré-Award</strong>: Atua como <strong>Applicant</strong>, submetendo a Proposal técnica e orçamentária.</li>
+<li><strong>Award</strong>: Aceita os termos e define o plano de trabalho detalhado.</li>
+<li><strong>Pós-Award</strong>: Líder da execução, aloca <strong>Subrecipient</strong> e gerencia o cronograma.</li>
+</ul>
+<h2 id="3-subdominios-e-componentes-criticos">3. Subdomínios e Componentes Críticos</h2>
+<p>Estes subdomínios agrupam as funcionalidades detalhadas no <a href="#6-funcionalidades-detalhadas-backlog">Backlog (#6)</a>:</p>
+<ul>
+<li>
+<p><strong>Gestão da Iniciativa (Post-Award)</strong>: Formalização, outorga e acompanhamento inicial.</p>
+</li>
+<li>
+<p><strong>Gestão de Resultados</strong>: Acompanhamento técnico, Milestone e mudanças.</p>
+</li>
+<li>
+<p><strong>Gestão de Recursos (Financeiro)</strong>: Orçamento, contas contábeis e Reporting.</p>
+</li>
+<li>
+<p><strong>Gestão de Equipe</strong>: Implementação e gestão de Subrecipient e voluntários.</p>
+</li>
+<li>
+<p><strong>Gestão de Lifecycle</strong>: Estados do projeto (suspensão, finalização).</p>
+</li>
+<li>
+<p><strong>Global Experience &amp; UX</strong>: Multilanguage support, help systems, and mobile reporting.</p>
+</li>
+</ul>
+<h2 id="4-kpis-do-grantee">4. KPIs do Grantee</h2>
+<ul>
+<li><strong>Taxa de Desembolso</strong>: % do orçamento executado conforme o planejado.</li>
+<li><strong>Nível de Atendimento de Milestone</strong>: Progresso técnico do projeto.</li>
+<li><strong>Conformidade de Relatórios</strong>: Pontualidade e aprovação das Reporting.</li>
+</ul>
+<h2 id="5-interface-principal">5. Interface Principal</h2>
+<ul>
+<li><strong>Applicant Portal</strong>: Portal self-service para submissão, tracking e gestão total do projeto.</li>
+</ul>
+<h2 id="6-funcionalidades-detalhadas-backlog">6. Funcionalidades Detalhadas (Backlog)</h2>
+<h3 id="gestao-de-capitacao-pre-award">Gestão de Capitação (Pre-Award)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Submeter Proposal</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Envio eletrônico da proposta técnica, cronograma e orçamento.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Padronização de formulário</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Alinhamento entre campos do portal e documentos de diretrizes oficiais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alertas e validação real-time</td>
+<td style="text-align: left;">Sistema</td>
+<td style="text-align: left;">Feedback imediato sobre erros de preenchimento ou limites orçamentários.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upload de anexos com labeling</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Organização obrigatória de documentos (PDFs, certidões) por categoria.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Consultar Status Proposal</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Acompanhamento real-time das etapas de avaliação de habilitação e mérito.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini-DSM: Dependências Capitação</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Submeter Proposal</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Padronização</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Validação Real-time</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Upload Anexos</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Consultar Status</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    1["1. Submeter Proposal"] --&gt; 2["2. Padronização"]
+    1 --&gt; 3["3. Validação RT"]
+    1 --&gt; 4["4. Upload Anexos"]
+    1 --&gt; 5["5. Consultar Status"]</code></pre>
+<h3 id="gestao-da-iniciativa-contratada-post-award">Gestão da Iniciativa Contratada (Post-Award)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Overview das Iniciativas</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Dashboard central para acompanhamento de prazos, saldo e tarefas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Assinar Award Agreement</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Assinatura digital do termo de outorga que oficializa o início do fomento.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Abrir conta do projeto</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Fluxo integrado para abertura de conta bancária isenta junto ao Banestes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ativar Projeto</td>
+<td style="text-align: left;">Grant Management</td>
+<td style="text-align: left;">Mudança de status para "Em Execução" após todas as assinaturas colhidas.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini-DSM: Dependências Iniciativa</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Overview Iniciativas</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Assinar Award</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Abrir Conta</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Ativar Projeto</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    1["1. Overview"] --&gt; 2["2. Assinar Award"]
+    2 --&gt; 3["3. Abrir Conta"]
+    2 --&gt; 4["4. Ativar Projeto"]</code></pre>
+<h3 id="gestao-de-resultados">Gestão de Resultados</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Solicitar mudanças</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Pedidos formais de alteração em metas, prazos ou equipe técnica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Submição dos resultados</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Envio dos produtos gerados (artigos, protótipos, relatórios) para avaliação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alerta de 60% de execução</td>
+<td style="text-align: left;">Sistema</td>
+<td style="text-align: left;">Notificação automática ao atingir gastos para planejamento de nova parcela.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timeline visual</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Caminho gráfico das etapas vencidas e futuras no workflow do projeto.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Repositório de Documentos</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Arquivamento centralizado de notas fiscais, fotos e comprovantes técnicos.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini-DSM: Dependências Resultados</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Solicitar Mudanças</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Submissão Resultados</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Alerta 60%</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Timeline Visual</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Repositório Docs</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    1["1. Solicitar Mudanças"] --&gt; 2["2. Submissão Result."]
+    2 --&gt; 3["3. Alerta 60%"]
+    2 --&gt; 4["4. Timeline Visual"]
+    2 --&gt; 5["5. Repositório Docs"]</code></pre>
+<h3 id="gestao-de-recursos-financeiro">Gestão de Recursos (Financeiro)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Solicitar adição orçamentaria</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Pedido justificado de recursos extras para o projeto.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Solicitar nova Conta Contabil</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Criação de rubricas específicas não previstas inicialmente no plano.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Remanejamento Orçamento</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Transferência de valores entre contas autorizadas (ex: diárias para serviços).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Leitura do extrado bancario</td>
+<td style="text-align: left;">Sistema</td>
+<td style="text-align: left;">Consulta automática de saldo e movimentações para conciliação.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emitir Ordem (Recurso)</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Envio de ordem para o Domínio de Pagamentos para liberar rubricas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Submição da Reporting</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Envio formal da prestação de contas (gastos vs metas).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Contestar Reporting</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Recurso administrativo contra glosas ou apontamentos da auditoria.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Assinatura Digital</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Autenticação eletrônica de documentos e relatórios financeiros.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Integração com App</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Upload de evidências (fotos/vídeos) via celular para relatórios técnicos.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Registro de Itens de Capital</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Inclusão de equipamentos e mobiliários no inventário do projeto.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini-DSM: Dependências Recursos</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+<th style="text-align: center;">8</th>
+<th style="text-align: center;">9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Adição Orçamentária</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Nova Conta Contábil</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Remanejamento</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Extrato Bancário</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Submissão Reporting</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>6. Contestar Reporting</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>7. Assinatura Digital</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>8. Integração App</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>9. Itens de Capital</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    3["3. Remanejamento"] --&gt; 5["5. Submissão Report"]
+    4["4. Extrato Bancário"] --&gt; 5
+    5 --&gt; 6["6. Contestar Report"]
+    5 --&gt; 7["7. Assinatura Digital"]
+    5 --&gt; 8["8. Integração App"]
+    5 --&gt; 9["9. Itens Capital"]</code></pre>
+<h3 id="gestao-de-equipe">Gestão de Equipe</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Remanejar de Grant</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Alteração da alocação de tipos de bolsa dentro da equipe do projeto.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Solicitar Grant</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Cadastro de novos membros (Bolsistas) para receberem auxílio financeiro.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Criar Plano de Trabalho</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Definição das tarefas e metas específicas para cada bolsista/voluntário.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cancelar solicitação</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Interrupção imediata de processo de indicação de membro ainda não assinado.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Supender solicitação</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Pausa em solicitações de bolsa durante períodos de análise ou transição.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gerir Voluntário</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Controle de membros da equipe que atuam sem remuneração da FAPES.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gerir Administrador</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Atribuição de permissões de gestão orçamentária para assistentes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workflow simplificado</td>
+<td style="text-align: left;">Team</td>
+<td style="text-align: left;">Interface direta para membros enviarem frequências e relatórios técnico.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Notificação automática</td>
+<td style="text-align: left;">Sistema</td>
+<td style="text-align: left;">Envio de e-mails/alertas para aceite de participação na equipe.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Consultar status bolsista</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Visualização de vigência, pagamentos e pendências de cada membro do time.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini-DSM: Dependências Equipe</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+<th style="text-align: center;">8</th>
+<th style="text-align: center;">9</th>
+<th style="text-align: center;">10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Remanejar Grant</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Solicitar Grant</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Plano de Trabalho</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Cancelar Solic.</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Suspender Solic.</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>6. Gerir Voluntário</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>7. Gerir Admin</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>8. Workflow Team</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>9. Notificação Aut.</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>10. Status Bolsista</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    2["2. Solicitar Grant"] --&gt; 3["3. Plano Trab."]
+    2 --&gt; 4["4. Cancelar Solic."]
+    2 --&gt; 5["5. Suspender Solic."]
+    2 --&gt; 9["9. Notificação Aut."]
+    2 --&gt; 10["10. Status Bol."]
+    3 --&gt; 6["6. Gerir Voluntário"]
+    3 --&gt; 8["8. Workflow Team"]</code></pre>
+<h3 id="global-experience-ux">Global Experience &amp; UX</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Alternar Idioma</td>
+<td style="text-align: left;">Usuário</td>
+<td style="text-align: left;">Tradução instantânea da interface para usuários internacionais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ajuda Contextual</td>
+<td style="text-align: left;">Usuário</td>
+<td style="text-align: left;">Guia interativo e dicas sobre como preencher os campos mais complexos.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ajuda Geral</td>
+<td style="text-align: left;">Usuário</td>
+<td style="text-align: left;">Base de conhecimento e tutoriais em vídeo acessíveis por página.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gestão de perfil</td>
+<td style="text-align: left;">Usuário</td>
+<td style="text-align: left;">Atualização de dados cadastrais, Lattes e recuperação de credenciais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Notificações Push/Email</td>
+<td style="text-align: left;">Sistema</td>
+<td style="text-align: left;">Alertas sobre prazos de prestação de contas e marcos técnicos.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini-DSM: Dependências Experience</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Alternar Idioma</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Ajuda Contextual</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Ajuda Geral</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Gestão de Perfil</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Notificações</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    1["1. Idioma"]
+    2["2. Ajuda Cont."]
+    3["3. Ajuda Geral"]
+    4["4. Perfil"]
+    5["5. Notificação"]</code></pre>
+<h3 id="gestao-de-lifecycle-status">Gestão de Lifecycle (Status)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Solicitar Suspender Projeto</td>
+<td style="text-align: left;">Misto</td>
+<td style="text-align: left;">Fluxo de interrupção temporária por motivos de força maior ou licença.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cancelar suspensão</td>
+<td style="text-align: left;">Misto</td>
+<td style="text-align: left;">Reativação do cronograma e pagamentos após período de pausa.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Solicitar Finalizar Projeto</td>
+<td style="text-align: left;">Misto</td>
+<td style="text-align: left;">Procedimento de encerramento após entrega de todos os resultados.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cancelar finalização</td>
+<td style="text-align: left;">Misto</td>
+<td style="text-align: left;">Reversão de encerramento caso haja necessidade de correções técnicas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relatório de Encerramento</td>
+<td style="text-align: left;">Grantee</td>
+<td style="text-align: left;">Guia passo-a-passo para finalização técnica e financeira do contrato.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mini-DSM: Dependências Lifecycle</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcionalidade</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Suspender Projeto</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Reativar Projeto</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Finalizar Projeto</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Cancelar Finaliz.</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Relatório Encerr.</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>graph TD
+    1["1. Suspender"] --&gt; 2["2. Reativar"]
+    3["3. Finalizar"] --&gt; 4["4. Cancelar Fin."]
+    3 --&gt; 5["5. Relat. Encerr."]</code></pre>
+<h3 id="66-visao-consolidada-do-dominio-dsm">6.6 Visão Consolidada do Domínio (DSM)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Funcs</th>
+<th style="text-align: center;">PRE</th>
+<th style="text-align: center;">PST</th>
+<th style="text-align: center;">RES</th>
+<th style="text-align: center;">RSC</th>
+<th style="text-align: center;">TEA</th>
+<th style="text-align: center;">Glb</th>
+<th style="text-align: center;">LFC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Pre-Award</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Post-Award</strong></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Resultados</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Recursos</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Equipe</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>6. Experience</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>7. Lifecycle</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Legenda de Dependência:</strong></p>
+<ul>
+<li>
+<p><strong>2 → 1</strong>: O início da execução depende da aprovação na submissão.</p>
+</li>
+<li>
+<p><strong>3 → 2</strong>: Resultados técnicos são reportados após a assinatura do contrato.</p>
+</li>
+<li>
+<p><strong>4 → [2, 3]</strong>: Gestão financeira depende do contrato ativo e das entregas técnicas.</p>
+</li>
+<li>
+<p><strong>5 → [2, 3]</strong>: Alocação de bolsistas depende do contrato e do plano de trabalho (resultados).</p>
+</li>
+<li>
+<p><strong>7 → 3</strong>: Mudanças de status (suspensão/encerramento) dependem do progresso dos resultados.</p>
+</li>
+</ul>
+<h3 id="66-grafo-de-execucao-ordem-topologica">6.6 Grafo de Execução (Ordem Topológica)</h3>
+<pre class="mermaid"><code>graph TD
+    PRE["1. Pre-Award"]
+    PST["2. Post-Award"]
+    RES["3. Resultados"]
+    RSC["4. Recursos"]
+    TEA["5. Equipe"]
+    Glb["6. Experience"]
+    LFC["7. Lifecycle"]
+
+    PRE --&gt; PST
+    PST --&gt; RES
+    PST --&gt; RSC
+    RES --&gt; RSC
+    PST --&gt; TEA
+    RES --&gt; TEA
+    RES --&gt; LFC</code></pre>
+<h2 id="7-diagrama-de-dominio">7. Diagrama de Domínio</h2>
+<pre class="mermaid"><code>classDiagram
+    class Grantee {
+        &lt;&lt;Domain&gt;&gt;
+    }
+    class PreAward {
+        +Submeter_Proposal
+        +Padronização_Formulário
+        +Upload_Anexos
+    }
+    class PostAward {
+        +Overview_Iniciativas
+        +Assinar_Award_Agreement
+        +Abrir_Conta_Projeto
+    }
+    class ResultsManagement {
+        +Solicitar_Mudanças
+        +Submissão_Resultados
+        +Monitoramento_Gatilhos
+        +Timeline_Visual
+    }
+    class ResourceManagement {
+        +Adição_Orçamentária
+        +Remanejamento_Orçamento
+        +Reporting
+        +Conciliação_Bancária
+    }
+    class TeamManagement {
+        +Solicitar_Bolsa
+        +Plano_Trabalho
+        +Gerir_Voluntários
+        +Workflow_Frequência
+    }
+    class GlobalExperience {
+        +Alternar_Idioma
+        +Ajuda_Contextual
+        +Gestão_Perfil
+    }
+    class Lifecycle {
+        +Suspender_Projeto
+        +Finalizar_Projeto
+    }
+    Grantee --&gt; PreAward
+    Grantee --&gt; PostAward
+    Grantee --&gt; ResultsManagement
+    Grantee --&gt; ResourceManagement
+    Grantee --&gt; TeamManagement
+    Grantee --&gt; GlobalExperience
+    Grantee --&gt; Lifecycle</code></pre>
+<h2 id="8-relacionamento-com-outros-dominios">8. Relacionamento com outros Domínios</h2>
+<pre class="mermaid"><code>graph TD
+    subgraph Estratégico
+        Grantor["&lt;b&gt;Grantor Domain&lt;/b&gt;&lt;br/&gt;(Regras &amp; Recursos)"]
+        Compliance["&lt;b&gt;Compliance Domain&lt;/b&gt;&lt;br/&gt;(Gatekeeper Transversal)"]
+    end
+
+    subgraph Administrativo
+        Institution["&lt;b&gt;Grantee Institution&lt;/b&gt;&lt;br/&gt;(Governança &amp; Portfólio)"]
+        Financial["&lt;b&gt;Financial Management&lt;/b&gt;&lt;br/&gt;(Contabilidade &amp; Saldos)"]
+        Payments["&lt;b&gt;Payments Domain&lt;/b&gt;&lt;br/&gt;(EDI &amp; Folha)"]
+    end
+
+    subgraph Operacional
+        Grantee["&lt;b&gt;Grantee Domain&lt;/b&gt;&lt;br/&gt;(Execução &amp; Liderança)"]
+        Subrecipient["&lt;b&gt;Subrecipient Domain&lt;/b&gt;&lt;br/&gt;(Tasks &amp; Bolsas)"]
+    end
+
+    %% Fluxo de Regras e Recursos
+    Grantor -- "Define FOA/RFP" --&gt; Grantee
+    Grantor -- "Outorga Award" --&gt; Institution
+    Institution -- "Hospeda Projeto" --&gt; Grantee
+    Grantee -- "Aloca &amp; Coordena" --&gt; Subrecipient
+
+    %% Fluxo de Ordens de Pagamento
+    Grantor -- "Ordem de Pagamento (Grant)" --&gt; Payments
+    Subrecipient -- "Ordem de Pagamento (Bolsa)" --&gt; Payments
+
+    %% Fluxo Financeiro (Execução)
+    Financial -- "Provê Rubricas" --&gt; Payments
+    Payments -- "Executa Crédito" --&gt; Subrecipient
+    Payments -- "Disponibiliza Recurso" --&gt; Grantee
+
+    %% Fluxo de Controle
+    Compliance -. "Monitora" .-&gt; Grantor
+    Compliance -. "Valida" .-&gt; Institution
+    Compliance -. "Audita" .-&gt; Grantee
+    Compliance -. "Verifica Adimplência" .-&gt; Payments</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 LEDS
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.expand", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

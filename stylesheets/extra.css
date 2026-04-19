@@ -1,0 +1,9 @@
+/* Justificar texto nos parágrafos da documentação */
+.md-content p {
+    text-align: justify;
+}
+
+/* Justificar também itens de lista caso necessário */
+.md-content li {
+    text-align: justify;
+}
