@@ -47,7 +47,11 @@ As **atividades contínuas** correm em paralelo a todas as fases, do início ao 
 
 ## Papéis e Atribuições
 
-> **Legenda:** **Condutor** — lidera e organiza as atividades da fase, facilita cerimônias, toma decisões sobre o processo e valida os artefatos. **Responsável** — executa e entrega o resultado principal da fase. **Participante** — contribui pontualmente quando necessário.
+Cada papel possui um nível de envolvimento diferente em cada fase ou atividade contínua:
+
+- **Condutor**: lidera e organiza as atividades da fase — facilita cerimônias, toma decisões sobre o processo, define a agenda de trabalho e valida os artefatos produzidos. É quem responde pela qualidade do processo.
+- **Responsável**: executa e entrega o resultado principal da fase — é quem "faz acontecer" na prática e responde pelo produto gerado.
+- **Participante**: contribui pontualmente quando convocado, fornecendo insumos, validações ou perspectivas específicas, sem liderar nem executar o trabalho principal.
 
 | Papel | SOW | Discovery | Inception | Implementação | Gestão de Projeto | Gestão de Conhecimento |
 |-------|:---:|:---------:|:---------:|:-------------:|:-----------------:|:----------------------:|
