@@ -50,6 +50,7 @@ As **atividades contínuas** correm em paralelo a todas as fases, do início ao 
 | Product Owner (PO) Técnico | Participante | **Condutor** | **Condutor** | Participante | **Responsável** |
 | Designer de UX de Produto | Participante | **Condutor** | Participante | — | Participante |
 | Tech Lead | — | Participante | **Condutor** | — | Participante |
+| Equipe de Desenvolvimento | — | Participante | Participante | Participante | Participante |
 
 ### Product Manager (PM)
 
@@ -82,6 +83,15 @@ Responsável pelas decisões técnicas e pela viabilidade da arquitetura propost
 - **Discovery**: apoia na compreensão de integrações, restrições tecnológicas e domínios de referência técnica que influenciam a solução.
 - **Inception**: conduz a definição da Arquitetura de Referência e a elaboração dos ADRs; avalia dependências entre módulos (a partir da DSM) para validar a ordem de entrega do roadmap.
 - **Gestão de Conhecimento** *(participante)*: garante que os ADRs e a documentação técnica reflitam as decisões reais tomadas ao longo do projeto.
+
+### Equipe de Desenvolvimento
+
+Responsável pela implementação das soluções definidas nas fases anteriores. Composta por desenvolvedores frontend, backend e/ou fullstack.
+
+- **Discovery**: participa de sessões de leitura dos domínios de referência para construir entendimento do negócio antes de começar a desenvolver; pode contribuir identificando restrições técnicas de implementação.
+- **Inception**: participa ativamente da estimativa das features do backlog, da construção da Definition of Ready / Done e das discussões de arquitetura — garantindo que as decisões sejam viáveis para quem vai implementar.
+- **Gestão de Projeto** *(participante)*: reporta progresso nas cerimônias ágeis, sinaliza impedimentos e colabora na atualização do status das entregas.
+- **Gestão de Conhecimento** *(participante)*: mantém a documentação técnica dos módulos atualizada (READMEs, modelos estruturais, regras de negócio implementadas) à medida que o desenvolvimento avança.
 
 
 
