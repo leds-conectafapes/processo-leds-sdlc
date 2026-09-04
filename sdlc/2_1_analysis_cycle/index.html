@@ -1,0 +1,2287 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do Ciclo de Vida de Desenvolvimento de Software (SDLC) do LEDS / LEDS Software Development Life Cycle (SDLC) Documentation">
+      
+      
+        <meta name="author" content="LEDS">
+      
+      
+        <link rel="canonical" href="https://leds-conectafapes.github.io/sdlc/sdlc/2_1_analysis_cycle/">
+      
+      
+        <link rel="prev" href="../2_discovery/">
+      
+      
+        <link rel="next" href="../3_inception/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>2.1 Refinamento da Análise - LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Outfit";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#refinamento-da-analise" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" class="md-header__button md-logo" aria-label="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.1 Refinamento da Análise
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/leds-conectafapes/sdlc" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leds-conectafapes/sdlc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../team/equipe/" class="md-tabs__link">
+          
+  
+  
+  Equipe
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../0_processo/" class="md-tabs__link">
+          
+  
+  
+  Processo SDLC
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../modelos/sow_template/" class="md-tabs__link">
+          
+  
+  
+  Modelos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" class="md-nav__button md-logo" aria-label="LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LEDS SDLC Process - Ciclo de Vida de Desenvolvimento de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/leds-conectafapes/sdlc" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leds-conectafapes/sdlc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Equipe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estrutura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/processo-less/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização de Equipes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processo SDLC
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Processo SDLC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0_processo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrama BPMN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_sow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Statement of Work (SOW)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Discovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Refinamento da Análise
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Refinamento da Análise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processo de Desenvolvimento de Software
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de Desenvolvimento de Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-planejar-cronograma-macro-do-projeto-com-os-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Planejar Cronograma Macro do Projeto com os Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modelar-processo-macro-de-um-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Modelar Processo Macro de um Goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-criar-um-prototipo-de-baixa-fidelidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Criar um protótipo de baixa fidelidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-criar-a-analise-de-requisito-macro-do-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Criar a Análise de Requisito Macro do Escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-planejar-entregas-dos-requisitos-e-versoes-do-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Planejar Entregas dos Requisitos e Versões do Escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-revisar-o-planejamento-macro-focado-no-goal-escolhido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Revisar o Planejamento Macro focado no Goal escolhido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-analisar-um-requisito-conforme-planejamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Analisar um requisito conforme planejamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-criar-o-prototipo-de-alta-fidelidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Criar o Protótipo de Alta Fidelidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-refinamento-tecnico-dos-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Refinamento Técnico dos Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planejar-entregas-de-requisitos-e-versoes-de-um-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planejar Entregas de Requisitos e Versões de um Goal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Planejar Entregas de Requisitos e Versões de um Goal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-modelar-o-processo-macro-do-goal-e-definir-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Modelar o processo macro do goal e definir escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-criar-prototipo-de-baixa-fidelidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Criar protótipo de baixa fidelidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-criar-os-requisitos-macros-do-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Criar os requisitos macros do escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-planejar-entregas-dos-requisitos-e-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Planejar entregas dos Requisitos e Versões
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-revisar-o-planejamento-junto-ao-po" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Revisar o Planejamento junto ao PO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artefatos-do-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artefatos do processo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsáveis
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_inception/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Inception
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/sow_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOW (Statement of Work)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/benchmarking_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarking e Análise Competitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discovery
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Discovery
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/discovery/product-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão do Produto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/discovery/personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/discovery/glossario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário de Conceitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/discovery/domains/NN-dominio-exemplo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domínio de Referência
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de Conhecimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de Conhecimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domain-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa de Domínios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/dictionary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dicionário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/dsm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Domínios (DSM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_5" id="__nav_4_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domínios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Domínios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/external-integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrações Externas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/financial-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão Financeira
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/grantee-institution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instituição de Execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/grantee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beneficiário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/grantor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concessor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/payments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pagamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/knowledge/domains/subrecipient/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processo de Desenvolvimento de Software
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de Desenvolvimento de Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-planejar-cronograma-macro-do-projeto-com-os-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Planejar Cronograma Macro do Projeto com os Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modelar-processo-macro-de-um-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Modelar Processo Macro de um Goal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-criar-um-prototipo-de-baixa-fidelidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Criar um protótipo de baixa fidelidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-criar-a-analise-de-requisito-macro-do-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Criar a Análise de Requisito Macro do Escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-planejar-entregas-dos-requisitos-e-versoes-do-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Planejar Entregas dos Requisitos e Versões do Escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-revisar-o-planejamento-macro-focado-no-goal-escolhido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Revisar o Planejamento Macro focado no Goal escolhido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-analisar-um-requisito-conforme-planejamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Analisar um requisito conforme planejamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-criar-o-prototipo-de-alta-fidelidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Criar o Protótipo de Alta Fidelidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-refinamento-tecnico-dos-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Refinamento Técnico dos Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planejar-entregas-de-requisitos-e-versoes-de-um-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planejar Entregas de Requisitos e Versões de um Goal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Planejar Entregas de Requisitos e Versões de um Goal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-modelar-o-processo-macro-do-goal-e-definir-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Modelar o processo macro do goal e definir escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-criar-prototipo-de-baixa-fidelidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Criar protótipo de baixa fidelidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-criar-os-requisitos-macros-do-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Criar os requisitos macros do escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-planejar-entregas-dos-requisitos-e-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Planejar entregas dos Requisitos e Versões
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-revisar-o-planejamento-junto-ao-po" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Revisar o Planejamento junto ao PO
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artefatos-do-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Artefatos do processo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsáveis
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="refinamento-da-analise">Refinamento da Analise</h1>
+<div class="bpmn-diagram">
+<p><a href="../../process/process.svg"><img alt="Diagrama BPMN do ciclo de refinamento da análise" src="../../process/process.svg" /></a></p>
+</div>
+<p><a download="process-leds-sdlc.png" href="../../process/process.png"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm-2 17-4-4h2.5v-3h3v3H16zm1-10V3.5L18.5 9z"/></svg></span> Baixar em PNG</a>
+&nbsp;·&nbsp;
+<a download="process.bpmn" href="../../process/process.bpmn"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm-2 17-4-4h2.5v-3h3v3H16zm1-10V3.5L18.5 9z"/></svg></span> Baixar o fonte <code>process.bpmn</code></a>
+&nbsp;·&nbsp;
+<a href="../../process/">Ver a página do diagrama</a></p>
+<p>O modelo é composto por dois pools. O primeiro descreve o ciclo completo, do planejamento macro dos <em>goals</em> até o refinamento técnico dos requisitos. O segundo detalha o subprocesso de planejamento de entregas de um <em>goal</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Origem do conteúdo</p>
+<p>As seções abaixo foram extraídas de <code>docs/process/process.bpmn</code>: responsável, tipo de elemento, sequência e artefatos vêm do modelo. As descrições de <strong>como</strong> executar cada atividade ainda precisam ser escritas pela equipe.</p>
+</div>
+<hr />
+<h2 id="processo-de-desenvolvimento-de-software">Processo de Desenvolvimento de Software</h2>
+<p>Inicia com o evento <strong>Entendimento macro do problema realizado</strong> e termina no refinamento técnico dos requisitos. Não há evento de fim modelado neste pool.</p>
+<h3 id="1-planejar-cronograma-macro-do-projeto-com-os-goals">1. Planejar Cronograma Macro do Projeto com os Goals</h3>
+<ul>
+<li><strong>Responsável:</strong> Product Owner</li>
+<li><strong>Tipo:</strong> Tarefa</li>
+<li><strong>Recebe de:</strong> evento inicial — entendimento macro do problema realizado</li>
+<li><strong>Entrega para:</strong> Modelar Processo Macro de um Goal</li>
+<li><strong>Artefatos produzidos:</strong> Plano Macro de entregas dos Goals do Projeto</li>
+</ul>
+<p>Define a sequência e o prazo macro em que os <em>goals</em> do projeto serão entregues.</p>
+<h3 id="2-modelar-processo-macro-de-um-goal">2. Modelar Processo Macro de um Goal</h3>
+<ul>
+<li><strong>Responsável:</strong> Equipe de Análise</li>
+<li><strong>Tipo:</strong> Subprocesso</li>
+<li><strong>Recebe de:</strong> Planejar Cronograma Macro do Projeto com os Goals</li>
+<li><strong>Entrega para:</strong> Criar um protótipo de baixa fidelidade e, em paralelo, direto para a junção que antecede a análise de requisitos</li>
+<li><strong>Artefatos produzidos:</strong> Processo de negócio macro e escopo</li>
+</ul>
+<p>Modela o processo de negócio do <em>goal</em> selecionado e delimita o escopo correspondente.</p>
+<h3 id="3-criar-um-prototipo-de-baixa-fidelidade">3. Criar um protótipo de baixa fidelidade</h3>
+<ul>
+<li><strong>Responsável:</strong> UX Design</li>
+<li><strong>Tipo:</strong> Subprocesso</li>
+<li><strong>Recebe de:</strong> Modelar Processo Macro de um Goal</li>
+<li><strong>Entrega para:</strong> junção paralela que antecede a análise de requisitos</li>
+<li><strong>Artefatos produzidos:</strong> Protótipo de Baixa Fidelidade</li>
+</ul>
+<p>Roda em paralelo à continuação da análise. Os dois caminhos precisam chegar à junção antes que a atividade seguinte comece.</p>
+<h3 id="4-criar-a-analise-de-requisito-macro-do-escopo">4. Criar a Análise de Requisito Macro do Escopo</h3>
+<ul>
+<li><strong>Responsável:</strong> Equipe de Análise</li>
+<li><strong>Tipo:</strong> Subprocesso</li>
+<li><strong>Recebe de:</strong> junção paralela (modelagem do processo macro e protótipo de baixa fidelidade)</li>
+<li><strong>Entrega para:</strong> Planejar Entregas dos Requisitos e Versões do Escopo</li>
+<li><strong>Artefatos produzidos:</strong> Modelos Macro de entendimento do problema</li>
+</ul>
+<h3 id="5-planejar-entregas-dos-requisitos-e-versoes-do-escopo">5. Planejar Entregas dos Requisitos e Versões do Escopo</h3>
+<ul>
+<li><strong>Responsável:</strong> Equipe de Análise</li>
+<li><strong>Tipo:</strong> Subprocesso — detalhado no pool <a href="#planejar-entregas-de-requisitos-e-versoes-de-um-goal">Planejar Entregas de Requisitos e Versões de um Goal</a></li>
+<li><strong>Recebe de:</strong> Criar a Análise de Requisito Macro do Escopo</li>
+<li><strong>Entrega para:</strong> Revisar o Planejamento Macro focado no Goal escolhido</li>
+<li><strong>Artefatos produzidos:</strong> Planejamento Macro de Entregas dos Requisitos e Versões</li>
+</ul>
+<h3 id="6-revisar-o-planejamento-macro-focado-no-goal-escolhido">6. Revisar o Planejamento Macro focado no Goal escolhido</h3>
+<ul>
+<li><strong>Responsável:</strong> Product Owner</li>
+<li><strong>Tipo:</strong> Tarefa</li>
+<li><strong>Recebe de:</strong> Planejar Entregas dos Requisitos e Versões do Escopo</li>
+<li><strong>Entrega para:</strong> divisão paralela que dispara as duas atividades seguintes</li>
+<li><strong>Artefatos produzidos:</strong> Planejamento de entregas dos requisitos revisado e aprovado</li>
+</ul>
+<p>Ponto de aprovação do Product Owner. A partir daqui, análise detalhada e protótipo de alta fidelidade seguem em paralelo.</p>
+<h3 id="7-analisar-um-requisito-conforme-planejamento">7. Analisar um requisito conforme planejamento</h3>
+<ul>
+<li><strong>Responsável:</strong> Equipe de Análise</li>
+<li><strong>Tipo:</strong> Tarefa</li>
+<li><strong>Recebe de:</strong> divisão paralela após a revisão do planejamento</li>
+<li><strong>Entrega para:</strong> junção paralela que antecede o refinamento técnico</li>
+<li><strong>Artefatos produzidos:</strong> Artefatos do domínio do problema</li>
+</ul>
+<h3 id="8-criar-o-prototipo-de-alta-fidelidade">8. Criar o Protótipo de Alta Fidelidade</h3>
+<ul>
+<li><strong>Responsável:</strong> UX Design</li>
+<li><strong>Tipo:</strong> Tarefa</li>
+<li><strong>Recebe de:</strong> divisão paralela após a revisão do planejamento</li>
+<li><strong>Entrega para:</strong> junção paralela que antecede o refinamento técnico</li>
+<li><strong>Artefatos produzidos:</strong> nenhum artefato modelado</li>
+</ul>
+<p>Roda em paralelo à análise do requisito.</p>
+<h3 id="9-refinamento-tecnico-dos-requisitos">9. Refinamento Técnico dos Requisitos</h3>
+<ul>
+<li><strong>Responsável:</strong> Equipe de Desenvolvimento</li>
+<li><strong>Tipo:</strong> Tarefa</li>
+<li><strong>Recebe de:</strong> junção paralela (análise do requisito e protótipo de alta fidelidade)</li>
+<li><strong>Entrega para:</strong> nenhuma atividade seguinte modelada</li>
+<li><strong>Artefatos produzidos:</strong> Artefatos de Projeto e Planejamento de desenvolvimento</li>
+</ul>
+<p>Última atividade do pool. Traduz os requisitos analisados em artefatos de projeto e no planejamento de desenvolvimento.</p>
+<hr />
+<h2 id="planejar-entregas-de-requisitos-e-versoes-de-um-goal">Planejar Entregas de Requisitos e Versões de um Goal</h2>
+<p>Detalha o subprocesso da <a href="#5-planejar-entregas-dos-requisitos-e-versoes-do-escopo">atividade 5</a>. Inicia com o evento <strong>Cronograma Macro de Goal recebido</strong> e termina com <strong>Planejamento de Requisitos e Versões aprovado</strong>.</p>
+<h3 id="1-modelar-o-processo-macro-do-goal-e-definir-escopo">1. Modelar o processo macro do goal e definir escopo</h3>
+<ul>
+<li><strong>Responsável:</strong> Analista de Requisitos</li>
+<li><strong>Tipo:</strong> Subprocesso</li>
+<li><strong>Recebe de:</strong> evento inicial — cronograma macro do <em>goal</em> recebido</li>
+<li><strong>Entrega para:</strong> divisão paralela que dispara as duas atividades seguintes</li>
+<li><strong>Artefatos produzidos:</strong> Processo de negócio macro e escopo</li>
+</ul>
+<h3 id="2-criar-prototipo-de-baixa-fidelidade">2. Criar protótipo de baixa fidelidade</h3>
+<ul>
+<li><strong>Responsável:</strong> UX Design</li>
+<li><strong>Tipo:</strong> Tarefa</li>
+<li><strong>Recebe de:</strong> divisão paralela após a modelagem do processo macro</li>
+<li><strong>Entrega para:</strong> junção paralela que antecede o planejamento de entregas</li>
+<li><strong>Artefatos produzidos:</strong> Protótipo de Baixa Fidelidade</li>
+</ul>
+<h3 id="3-criar-os-requisitos-macros-do-escopo">3. Criar os requisitos macros do escopo</h3>
+<ul>
+<li><strong>Responsável:</strong> Analista de Requisitos</li>
+<li><strong>Tipo:</strong> Subprocesso</li>
+<li><strong>Recebe de:</strong> divisão paralela após a modelagem do processo macro</li>
+<li><strong>Entrega para:</strong> junção paralela que antecede o planejamento de entregas</li>
+<li><strong>Artefatos produzidos:</strong> Artefatos de entendimento macro do escopo</li>
+</ul>
+<p>Roda em paralelo à criação do protótipo de baixa fidelidade.</p>
+<h3 id="4-planejar-entregas-dos-requisitos-e-versoes">4. Planejar entregas dos Requisitos e Versões</h3>
+<ul>
+<li><strong>Responsável:</strong> Analista de Requisitos</li>
+<li><strong>Tipo:</strong> Subprocesso</li>
+<li><strong>Recebe de:</strong> junção paralela (protótipo de baixa fidelidade e requisitos macros do escopo)</li>
+<li><strong>Entrega para:</strong> Revisar o Planejamento junto ao PO</li>
+<li><strong>Artefatos produzidos:</strong> Planejamento Macro de Entregas dos Requisitos e Versões</li>
+</ul>
+<h3 id="5-revisar-o-planejamento-junto-ao-po">5. Revisar o Planejamento junto ao PO</h3>
+<ul>
+<li><strong>Responsável:</strong> Analista de Requisitos</li>
+<li><strong>Tipo:</strong> Tarefa</li>
+<li><strong>Recebe de:</strong> Planejar entregas dos Requisitos e Versões</li>
+<li><strong>Entrega para:</strong> evento final — planejamento de requisitos e versões aprovado</li>
+<li><strong>Artefatos produzidos:</strong> nenhum artefato modelado</li>
+</ul>
+<p>Fecha o subprocesso com a aprovação do Product Owner.</p>
+<hr />
+<h2 id="artefatos-do-processo">Artefatos do processo</h2>
+<table>
+<thead>
+<tr>
+<th>Artefato</th>
+<th>Produzido em</th>
+<th>Responsável</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plano Macro de entregas dos Goals do Projeto</td>
+<td>Planejar Cronograma Macro do Projeto com os Goals</td>
+<td>Product Owner</td>
+</tr>
+<tr>
+<td>Processo de negócio macro e escopo</td>
+<td>Modelar Processo Macro de um Goal</td>
+<td>Equipe de Análise</td>
+</tr>
+<tr>
+<td>Protótipo de Baixa Fidelidade</td>
+<td>Criar um protótipo de baixa fidelidade</td>
+<td>UX Design</td>
+</tr>
+<tr>
+<td>Modelos Macro de entendimento do problema</td>
+<td>Criar a Análise de Requisito Macro do Escopo</td>
+<td>Equipe de Análise</td>
+</tr>
+<tr>
+<td>Planejamento Macro de Entregas dos Requisitos e Versões</td>
+<td>Planejar Entregas dos Requisitos e Versões do Escopo</td>
+<td>Equipe de Análise</td>
+</tr>
+<tr>
+<td>Planejamento de entregas dos requisitos revisado e aprovado</td>
+<td>Revisar o Planejamento Macro focado no Goal escolhido</td>
+<td>Product Owner</td>
+</tr>
+<tr>
+<td>Artefatos do domínio do problema</td>
+<td>Analisar um requisito conforme planejamento</td>
+<td>Equipe de Análise</td>
+</tr>
+<tr>
+<td>Artefatos de Projeto e Planejamento de desenvolvimento</td>
+<td>Refinamento Técnico dos Requisitos</td>
+<td>Equipe de Desenvolvimento</td>
+</tr>
+<tr>
+<td>Artefatos de entendimento macro do escopo</td>
+<td>Criar os requisitos macros do escopo</td>
+<td>Analista de Requisitos</td>
+</tr>
+</tbody>
+</table>
+<h2 id="responsaveis">Responsáveis</h2>
+<table>
+<thead>
+<tr>
+<th>Raia</th>
+<th>Atividades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product Owner</td>
+<td>Planejar Cronograma Macro do Projeto com os Goals; Revisar o Planejamento Macro focado no Goal escolhido</td>
+</tr>
+<tr>
+<td>Equipe de Análise</td>
+<td>Modelar Processo Macro de um Goal; Criar a Análise de Requisito Macro do Escopo; Planejar Entregas dos Requisitos e Versões do Escopo; Analisar um requisito conforme planejamento</td>
+</tr>
+<tr>
+<td>UX Design</td>
+<td>Criar um protótipo de baixa fidelidade; Criar o Protótipo de Alta Fidelidade</td>
+</tr>
+<tr>
+<td>Equipe de Desenvolvimento</td>
+<td>Refinamento Técnico dos Requisitos</td>
+</tr>
+<tr>
+<td>Analista de Requisitos</td>
+<td>Modelar o processo macro do goal e definir escopo; Criar os requisitos macros do escopo; Planejar entregas dos Requisitos e Versões; Revisar o Planejamento junto ao PO</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 LEDS
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.expand", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
